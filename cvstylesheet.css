@@ -1,0 +1,23 @@
+/*Resume styling*/
+@page{
+    size: A4;
+    margin: 0;
+}
+.resume_details{
+    background-color: lightgrey;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(90, 90, 90);
+}
+.resume_profile{
+    background-color: honeydew;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(90, 90, 90);
+}
+.pdata{
+    margin-top: 50px;
+}
+.cvd{
+    margin-left: 50px;
+}
