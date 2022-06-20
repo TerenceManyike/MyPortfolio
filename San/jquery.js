@@ -1,5 +1,5 @@
 //Runs after the page has loaded
-$(document).ready(function(){
+$(document).ready(function () {
 
     //Shows bootstrap cards
     $(window).on("load",function(){
