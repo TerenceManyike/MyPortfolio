@@ -24,7 +24,7 @@ $(document).ready(function(){
         });
     }
     //Skillset bar loading
-    $(".skills").hover(function(){
+    $('.list-unstyled').on("load",function(){
         $(".html-bar").animate({
             width: "80%"
         },1000);
@@ -41,24 +41,24 @@ $(document).ready(function(){
             width: "50%"
         },1400);
         $(".php-bar").animate({
-            width: "75%"
+            width: "65%"
         },1500);
-        $(".wordpress-bar").animate({
-            width: "0%"
+        $(".laravel-bar").animate({
+            width: "60%"
         },1600);
-        $(".xml-bar").animate({
-            width: "0%"
+        $(".java-bar").animate({
+            width: "50%"
         },1700);
-        $(".json-bar").animate({
-            width: "0%"
-        },1800);
-        $(".restapi-bar").animate({
-            width: "0%"
-        },1900);
-        $(".vue-bar").animate({
-            width: "0%"
-        },2000);
         $(".c-bar").animate({
+            width: "40%"
+        },1800);
+        $(".cc-bar").animate({
+            width: "40%"
+        },1900);
+        $(".mysql-bar").animate({
+            width: "60%"
+        },2000);
+        $(".vue-bar").animate({
             width: "10%"
         },2100);
 
@@ -68,22 +68,22 @@ $(document).ready(function(){
         $(this).animate({
             marginTop: "-=10%",
             width: "+=10px",
-        },300);
+        },200);
     },function(){
         $(this).animate({
             marginTop: "+=10%",
             width: "-=10px",
-        }),100;
+        }),80;
     });
     //My portfolio card hover effects
     $(".my-p-card").hover(function(){
         $(this).animate({
             marginTop: "-=10%"
-        },500);
+        },200);
     },function(){
         $(this).animate({
             marginTop: "+=10%"
-        },100);
+        },80);
     });
     //Scrolling to the sub-section page
     var page_link = window.location.href;
