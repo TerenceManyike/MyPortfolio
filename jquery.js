@@ -75,16 +75,7 @@ $(document).ready(function(){
             width: "-=10px",
         }),80;
     });
-    //My portfolio card hover effects
-    $(".my-p-card").hover(function(){
-        $(this).animate({
-            marginTop: "-=10%"
-        },200);
-    },function(){
-        $(this).animate({
-            marginTop: "+=10%"
-        },80);
-    });
+    
     //Scrolling to the sub-section page
     var page_link = window.location.href;
     var page_id = page_link.subString(page_link.lastIndexOf("#") + 1);
