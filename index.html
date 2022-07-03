@@ -12,46 +12,67 @@
     <link rel="stylesheet" href="stylesheet.css">
     <!-- Profile icon -->
     <link rel="shortcut icon" href="includes/Myself.png" type="image/png">
+    <!-- Import vue -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
     <title>Manyike San Terence</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+<body class="section">
+    <div class="container-fluid content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand a-nav ml-3" href="index.html"><img class="avatar" src="includes/Profilepic.jpg" alt="Myself">&nbsp; My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
+                <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active a-nav" aria-current="page" href="index.html">HOME</a>
+                    <a class="nav-link active a-nav" aria-current="page" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link a-nav" href="#scroll-about">ABOUT</a>
+                    <a class="nav-link a-nav" href="#scroll-about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link a-nav" href="#scroll-portfolio">PORTFOLIO</a>
+                    <a class="nav-link a-nav" href="#scroll-portfolio">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link a-nav" href="San/index.html">TECHNOLOGIES</a>
+                    <a class="nav-link a-nav" href="San/index.html">TECHNOLOGIES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link a-nav" href="#contacts">CONTACT</a>
+                    <a class="nav-link a-nav" href="#contacts">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a name="login" class="nav-link a-nav" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
                 </li>
-              </ul>
+                </ul>
             </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="section">
+        </nav>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    
+                <div class="col-12 alert alert-info text-center alert-dismissible fade show">
+                    <p class="display-5">Under construction!</p>
+                    <p>Working on something more interesting</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="col-12 text-center">
+                    <img class="profilepic" src="includes/Profilepic.jpg" alt="Myself">
+                </div>
+                <div class="col-md-3">
+                    <hr class="jumbotron-hr1">
+                </div>
+                <div class="col-md-6 align-self-center mb-5">
+                    <p class="display-4">Hello I'm San Manyike</p>
+                    <h3>Full Stack Developer</h3>
+                    <p>I'm a designer who care's about your story</p>
+                    <a href="profile.html" target="_blank"><button class="btn btn-info">MY RESUME</button></a>
+                </div>
+                <div class="col-md-3 ml-3">
+                    <hr class="jumbotron-hr2">
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="app" class="container-fluid">
+        <div style="width: 100%;">
             <!--Modal login pop-up start-->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -92,7 +113,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel"><img class="avatar" src="includes/png/001-avatar.png" alt="Login avatar">&nbsp;Create new account</h5>
-                      <buttno type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body"><!--Modal signup body start-->
                         <p>Make the most out of a piece of paper and portray your work experience, skills and education in a way that will make you stand out from the bulk of CV's recruiters read on a daily basis. Register below for a best CV revamp.</p>
@@ -153,41 +174,13 @@
                   </div>
                 </div>
             </div> <!--Modal signup pop-up end-->
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 alert alert-info text-center alert-dismissible fade show">
-                            <p class="display-5">Under construction!</p>
-                            <p>Working on something more interesting</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="col-12 text-center">
-                            <img class="profilepic" src="includes/Profilepic.jpg" alt="Myself">
-                        </div>
-                        <div class="col-md-3">
-                            <hr class="jumbotron-hr1">
-                        </div>
-                        <div class="col-md-6 align-self-center">
-                            <p class="display-4">Hello I'm San Manyike</p>
-                            <h3>Full Stack Developer</h3>
-                            <p>I'm a designer who care's about your story</p>
-                            <a href="https://github.com/TerenceManyike" target="_blank"><button class="btn btn-info">MY PROJECTS</button></a>
-                        </div>
-                        <div class="col-md-3 ml-3">
-                            <hr class="jumbotron-hr2">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="row">
-                <div class="col-6 project-history">
+                <div class="col-md-6 project-history">
                     <div id="scroll-about" class="section-one">
                         <div class="row justify-content-center">
                             <div class="col-12 text-center">
-                                <p class="display-4 heading about1">About and services</p>
-                            </div>
-                            <div class="col-2">
-                                <hr class="about-u">
+                                <p class="display-5 heading about1">{{ about_tittle }}</p>
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -201,80 +194,16 @@
                                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
                                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 1"></button>
                                 </div>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Onlinechat.png" alt="Online_service">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">ONLINE CHAT</h5>
-                                            <p class="card-text">Connect with your Customers on demand. Our live-chat solution is simple, reliable, easy to use! Hosted, secure, and only requires a small snippet of HTML code be added to your website.</p>
+                                <div v-for="item in about" class="carousel-inner" data-bs-interval="10000">
+                                    <div :class="item.carousel">
+                                        <div class="card about-card">
+                                            <img class="about-img" :src="item.image_url" :alt="item.img_alt">
+                                            <div class="card-body">
+                                                <h5 class="card-title heading">{{ item.tittle }}</h5>
+                                                <p class="card-text">{{ item.description }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Contacts.png" alt="contacts">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">CONTACTS</h5>
-                                            <p class="card-text">This will help you communicate easily and quickly with Customers, Consumers, Constituents, in a cost-effective and preferred way.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Webservices.png" alt="Webservices">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">WEB SERVICES</h5>
-                                            <p class="card-text">Safe, secure, reliable web hosting for your website or other business needs. With flexible packages and support available, you can rest assured that we’ll keep you connected and online.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Viewdate.png" alt="contacts">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">VIEW DATE</h5>
-                                            <p class="card-text">This will help you communicate easily and quickly with Customers, Consumers, Constituents, in a cost-effective and preferred way.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Requestaquote.png" alt="Requestquote">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">REQUEST A QUOTE</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Paymentmethod.png" alt="Paymentmethod">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">PAYMENT METHOD</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Resume.png" alt="Paymentmethod">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">CREATE RESUME</h5>
-                                            <p class="card-text">Use professional field-tested resume templates that follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free!</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="card about-card">
-                                        <img class="about-img" src="includes/png/Whatsnew.png" alt="News">
-                                        <div class="card-body">
-                                            <h5 class="card-title heading">WHAT'S NEW</h5>
-                                            <p class="card-text">No news update yet!..</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 13 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                  </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -288,20 +217,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 project-history">
-                    <div id="scroll-pricing" class="row text-center justify-content-center">
-                        <div class="col-3 align-self-center">
+                <div class="col-md-6 project-history pt-5">
+                    <div class="row text-center justify-content-center">
+                        <div class="col-2 align-self-center">
                             <hr class="pricing-hr">
                         </div>
-                        <div class="col-4">
-                            <p class="heading pricing1">Project History</p>
+                        <div class="col-6">
+                            <p class="display-5">{{ project_history_tittle }}</p>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <hr class="pricing-hr">
                         </div>
                     </div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        
+                    <div v-for="project in project_history" class="row mt-3">
+                        <div class="col-4"></div>
+                        <div class="col-2 text-center">
+                            <a :href="project.link" target="_blank">
+                                <img class="git-icon" :src="project.image_url" :alt="project.img_alt">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <p>{{ project.name }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -407,5 +344,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="jquery.js"></script>
     <script src="javascript.js"></script>
+    <!-- Import Js -->
+    <script src="vue.js"></script>
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
 </body>
 </html>

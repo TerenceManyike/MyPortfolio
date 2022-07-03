@@ -24,43 +24,43 @@ $(document).ready(function(){
         });
     }
     //Skillset bar loading
-    $('.list-unstyled').on("load",function(){
+    $(window).on("load",function(){
         $(".html-bar").animate({
-            width: "80%"
+            width: "70%"
         },1000);
         $(".css-bar").animate({
             width: "68%"
-        },1100);
-        $(".bootstrap-bar").animate({
-            width: "60%"
         },1200);
+        $(".bootstrap-bar").animate({
+            width: "70%"
+        },1400);
         $(".javascript-bar").animate({
             width: "55%"
-        },1300);
+        },1600);
         $(".jquery-bar").animate({
             width: "50%"
-        },1400);
+        },1800);
         $(".php-bar").animate({
             width: "65%"
-        },1500);
+        },2000);
         $(".laravel-bar").animate({
-            width: "60%"
-        },1600);
-        $(".java-bar").animate({
             width: "50%"
-        },1700);
+        },2200);
+        $(".java-bar").animate({
+            width: "40%"
+        },2400);
         $(".c-bar").animate({
             width: "40%"
-        },1800);
+        },2600);
         $(".cc-bar").animate({
             width: "40%"
-        },1900);
+        },2800);
         $(".mysql-bar").animate({
-            width: "60%"
-        },2000);
+            width: "50%"
+        },3000);
         $(".vue-bar").animate({
-            width: "10%"
-        },2100);
+            width: "40%"
+        },3200);
 
     });
     //Pricing card hover effects
