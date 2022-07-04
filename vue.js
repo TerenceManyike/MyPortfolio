@@ -67,6 +67,30 @@ const app = Vue.createApp({
                 },{
                     name:'My Portfolio', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/MyPortfolio'
                 },
+            ],
+
+            //Profile section
+            profile_tittle: 'My Portfolio',
+            profiles: [
+                {
+                    name:'Profile', 
+                    image_url:'includes/Profile.jpg', 
+                    img_alt:'About my profile', 
+                    link:'profile.html',
+                    description: 'I\'m a PHP full stack junior developer. I\'m a designer who cares about your story.'
+                },{
+                    name:'Education', 
+                    image_url:'includes/Education.jpg', 
+                    img_alt:'About my education', 
+                    link:'San/index.html',
+                    description: 'Studying abroad gave me the chance to see a side of my major that I have never been exposed to.'
+                },{
+                    name:'Resume Builder', 
+                    image_url:'includes/Projects.jpg', 
+                    img_alt:'About my projects', 
+                    link:'My_projects.html',
+                    description: 'Create a resume for free that will stand out using a CV generator built with care.'
+                },
             ]
         }
     }

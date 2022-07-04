@@ -1,5 +1,5 @@
 //Runs after the page has loaded
-$(document).ready(function(){
+$(document).ready(function (){
     //Show alert box and profile picture
     $(window).on("load",function(){
         $(".alert").show(1000);

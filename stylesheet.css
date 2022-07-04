@@ -1,61 +1,50 @@
-/*Apply to all style*/
-body{
-    font-family: 'Oxygen', sans-serif;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
-.container-fluid{
-    padding: 0;
-    margin: 0;
-}
-/*Main page style*/
-.section{
-    background-image: url(includes/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-}
-a{
-    color: rgb(0, 0, 0) !important;
-}
+
 .navbar{
     background-color: black !important;
-    opacity: 0.7;
-    position: fixed;
+    opacity: 0.8;
     top: 0;
     z-index: 999;
+    position: fixed;
     width: 100%;
 }
+
 .navbar a{
     color: honeydew !important;
     opacity: 0.7;
 }
 .a-nav:hover{
     text-decoration: none;
-    background-color: rgb(130, 205, 252) !important;
+    background-color: rgb(0, 39, 63) !important;
     color: black !important;
     border-radius: 5px;
 }
 .navbar-toggler{
     background-color: honeydew !important;
 }
-.jumbotron{
-    height: 100%;
+
+.section{
+    background-image: url(includes/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: black !important;
+    opacity: 0.9;
 }
-.jumbotron-hr1, .jumbotron-hr2{
-    width: 0;
-}
+
 .alert{
-    display: none;
+    width: 100%;
+    margin-top: 40px;
+    
 }
+
 .profilepic{
     width: 200px;
     height: 200px;
@@ -64,108 +53,114 @@ a{
     border: 1px solid #1A5276;
     display: none;
 }
+
 hr{
     background-color: honeydew;
-    opacity: 0.2;
+    opacity: 0.5;
     border-radius: 50px;
 }
-.pricing-hr ,.portfolio-hr{
-    background-color: #1A5276;
-    height: 5px !important;
+
+.jumbotron-hr1, .jumbotron-hr2{
+    width: 0;
 }
-.align-self-center{
-    text-align: center !important;
+
+.intro{
+    color: honeydew;
+    opacity: 0.7;
 }
-.btn-info{
-    background-color: #1A5276;
-    width: 150px;
-    border-radius: 50px;
-    border: none;
-}
-.avatar{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-.section-one{
-    width: auto;
-    height: 100%;
-    background-color: lightgrey;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-.about1, .pricing1{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 .about-img{
     width: 200px;
     height: 200px;
 }
 .about-card{
     box-shadow: 2px 5px 10px black;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     align-items: center;
     height: 450px;
 }
-.heading{
-    color: #58595B;
+
+.git-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
-.about-u{
-    margin-bottom: 70px;
-    margin-top: 0;
-    background-color: #1A5276;
-    height: 5px !important;
+
+.project-history{
+    background-color: black;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    color: honeydew;
 }
-.u-card{
-    background-color: lightgrey;
+
+.section-one{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 100%;
+    text-align: center;
 }
-.p-card{
-    border-top: 5px solid #1A5276;
-    margin-bottom: 100px;
-    height: 500px;
-    width: 100% ;
-}
-.p-card:hover{
-    box-shadow: 5px 5px 10px black;
-}
-/*My portfolio style*/
+
 .section-two{
     width: 100%;
     height: 100%;
     margin-top: 0;
     padding-top: 50px;
-    background-color: black;
-    opacity: 0.7;
 }
+
 .section-two-content{
     padding-bottom: 50px;
+    color: honeydew;
+
 }
-/*Card-images and card style*/
+
 .card-img-top{
     height: 200px;
     border-top-left-radius: 50px ;
     border-top-right-radius: 50px ;
 }
+
 .my-p-card{
     width: auto;
     height: 500px;
     margin-bottom: 100px;
     border-radius: 50px;
     border-color: #1A5276 !important;
+    opacity: 0.6;
 }
+
 .card-btn{
-    margin-bottom: 50px !important;
+    margin-bottom: 20px !important;
+    border-radius: 50px;
+    background-color: #061c2b;
+    color: honeydew;
+    border-style: none;
+
 }
+
+.card-btn:hover{
+    text-decoration: none;
+    background-color: red !important;
+    color: honeydew !important;
+    border-radius: 50px;
+}
+
+.about1{
+    margin-bottom: 35px;
+}
+
 /*Footer style*/
 .footer{
     background-image: url(includes/footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: auto;
+    width: 100%;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 .enquiry{
     width: auto;
@@ -214,10 +209,7 @@ hr{
     height: 100%;
     padding-bottom: 80px;
 }
-.profile-hr{
-    background-color: #1A5276;
-    height: 5px !important;
-}
+
 .scale{
     width: auto;
     border: .5px solid #061c2b;
@@ -232,35 +224,23 @@ hr{
     height: 10px;
     width: 1%;
 }
-#carouselExampleDark {
-    width: 70%;
-    color: #061c2b;
-    height: auto;
-}
-.project-history{
-    background-color: black;
-        opacity: 0.7;
-        margin: 0;
-        padding: 0;
+
+.carousel-inner{
+    color: grey;
 }
 
-.content{
-    margin-top: 70px;
-    background-color: black;
-    opacity: 0.7;
-    width: 100%;
+.profile-hr{
+    background-color: #1A5276;
+    height: 5px !important;
 }
 
-.git-icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.about-section{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: honeydew;
 }
 
-/*Responsive screen view adjustment*/
-@media (max-width: 769px){
-    .blank2{
-        background-color: black;
-        opacity: 0.7;
-    }
+.project-link{
+    text-underline-offset : none;
 }
