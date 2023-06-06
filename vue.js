@@ -66,6 +66,8 @@ const app = Vue.createApp({
                     name:'JavaScript', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/JavaScript'
                 },{
                     name:'My Portfolio', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/MyPortfolio'
+                },{
+                    name:'Users API Integration', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/usersAssessment'
                 },
             ],
 
