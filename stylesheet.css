@@ -215,10 +215,7 @@ hr{
     border: .5px solid #061c2b;
     border-radius: 50px;
 }
-.html-bar, .css-bar, .bootstrap-bar, .javascript-bar,
-.jquery-bar, .php-bar, .laravel-bar, .java-bar,
-.c-bar, .cc-bar, .vue-bar, .mysql-bar
-{
+.bar-fill{
     background-color: #1A5276;
     opacity: 0.2;
     height: 10px;

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Import vue -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -15,7 +17,7 @@
     <title>Manyike San Terence</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div id="appp" class="container-fluid">
       <div class="profile-background">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -80,54 +82,14 @@
                 <p>terrencemanyike@gmail.com</p>
                 <p class="display-6 skills">Skills</p><hr class="profile-hr">
                 <ul class="list-unstyled">
-                  <li>HTML</li>
+                <!-- My skillset start -->
+                <div v-for="data in skillset" class="mb-1">
+                  <li>{{ data.skill }} &nbsp; {{ data.comfortability }}%</li>
                   <div class="scale">
-                    <div class="html-bar"></div>
+                    <div class="bar-fill" :style="{ width: data.comfortability + '%' }"></div>
                   </div>
-                  <li>CSS</li>
-                  <div class="scale">
-                    <div class="css-bar"></div>
-                  </div>
-                  <li>Bootstrap</li>
-                  <div class="scale">
-                    <div class="bootstrap-bar"></div>
-                  </div>
-                  <li>Javascript</li>
-                  <div class="scale">
-                    <div class="javascript-bar"></div>
-                  </div>
-                  <li>JQuery</li>
-                  <div class="scale">
-                    <div class="jquery-bar"></div>
-                  </div>
-                  <li>PHP</li>
-                  <div class="scale">
-                    <div class="php-bar"></div>
-                  </div>
-                  <li>Laravel</li>
-                  <div class="scale">
-                    <div class="laravel-bar"></div>
-                  </div>
-                  <li>Java</li>
-                  <div class="scale">
-                    <div class="java-bar"></div>
-                  </div>
-                  <li>C</li>
-                  <div class="scale">
-                    <div class="c-bar"></div>
-                  </div>
-                  <li>C++</li>
-                  <div class="scale">
-                    <div class="cc-bar"></div>
-                  </div>
-                  <li>MySQL</li>
-                  <div class="scale">
-                    <div class="mysql-bar"></div>
-                  </div>
-                  <li>Vue</li>
-                  <div class="scale">
-                    <div class="vue-bar"></div>
-                  </div>
+                </div>
+                <!-- My skillset end -->
                 </ul>
               </div>
               <div class="col-md-2"></div>
@@ -224,5 +186,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="jquery.js"></script>
     <script src="javascript.js"></script>
+    <!-- Import Js -->
+    <!-- Import Js -->
+    <script src="vue1.js"></script>
+    <script>
+      const mountedApp = app.mount('#appp')
+    </script>
   </body>
 </html>
