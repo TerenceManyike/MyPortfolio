@@ -68,14 +68,11 @@ const app = Vue.createApp({
                     name:'My Portfolio', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/MyPortfolio'
                 },{
                     name:'Users API Integration', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/usersAssessment'
-                },
-                {
+                },{
                     name:'Covid Stats API Integration', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/Assessment-1'
-                },
-                {
+                },{
                     name:'Laravel Relational DB with Authentication', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/CubeAssessment'
-                },
-                {
+                },{
                     name:'Fundamentals of OOP', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/OOP'
                 },
             ],
