@@ -13,7 +13,7 @@ const app = Vue.createApp({
                 ,
                 {
                   "skill": "MySQL",
-                  "comfortability": 50
+                  "comfortability": 70
                 }
                 ,
                 {
@@ -38,7 +38,7 @@ const app = Vue.createApp({
                 ,
                 {
                   "skill": "DBeaver",
-                  "comfortability": 70
+                  "comfortability": 80
                 }
                 ,
                 {
@@ -56,6 +56,15 @@ const app = Vue.createApp({
                   "comfortability": 50
                 }
                 ,
+                {
+                  "skill": "Jupyter Notebook",
+                  "comfortability": 50
+                }
+                ,
+                {
+                  "skill": "R Studio",
+                  "comfortability": 50
+                },
                 {
                   "skill": "Java",
                   "comfortability": 50
@@ -78,6 +87,11 @@ const app = Vue.createApp({
                 ,
                 {
                   "skill": "JQuery",
+                  "comfortability": 55
+                }
+                ,
+                {
+                  "skill": "Vue.js",
                   "comfortability": 55
                 }
                 ,
