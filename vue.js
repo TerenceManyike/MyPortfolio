@@ -74,6 +74,8 @@ const app = Vue.createApp({
                     name:'Laravel Relational DB with Authentication', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/CubeAssessment'
                 },{
                     name:'Fundamentals of OOP', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/OOP'
+                },{
+                    name:'Data analysis with python', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/pythonDataAnalysis'
                 },
             ],
 
