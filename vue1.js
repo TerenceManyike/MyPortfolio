@@ -81,6 +81,11 @@ const app = Vue.createApp({
                 }
                 ,
                 {
+                  "skill": "Livewire",
+                  "comfortability": 69
+                }
+                ,
+                {
                   "skill": "JavaScript",
                   "comfortability": 50
                 }
