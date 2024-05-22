@@ -241,3 +241,7 @@ hr{
 .project-link{
     text-underline-offset : none;
 }
+
+.updated-footer{
+    padding: 0;
+}

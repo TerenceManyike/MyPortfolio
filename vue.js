@@ -2,58 +2,53 @@ const app = Vue.createApp({
     data(){
         return {
             //About
-            about_tittle: 'About and Services',
+            about_tittle: 'Project Description',
             about: [
                 {
-                    tittle:'ONLINE CHAT', 
-                    description:'Connect with your Customers on demand. Our live-chat solution is simple, reliable, easy to use! Hosted,       secure, and only requires a small snippet of HTML code be added to your website.', 
-                    img_alt:'Online_service', 
-                    image_url:'includes/png/Onlinechat.png',
+                    tittle:'Data Analysis with Python', 
+                    description:'On this project random csv data was pulled from kaggle for data analysis. It starts from the basics of making dataframes using arrays, dictionaries, and csv data In the descriptive data analysis pivot tables were used to summarise the data from csv imports and to visualise the data in a a form of graphs and pie charts. Pandas, numpy and matplotlib are the modules used in this project.', 
+                    img_alt:'jupyter_notebook', 
+                    image_url:'includes/png/python_analysis.png',
                     carousel:'carousel-item active'
                 },{
-                    tittle:'CONTACTS', 
-                    description:'This will help you communicate easily and quickly with Customers, Consumers, Constituents, in a cost-effective and preferred way.', 
-                    img_alt:'contacts', 
-                    image_url:'includes/png/Contacts.png',
+                    tittle:'Machine Learning', 
+                    description:'Building and training a model to predict car prices in the future using Linear Regression. Some Machine Learning libraries from sklearn used are model_selection, linear_model and metrix.', 
+                    img_alt:'machine_learning', 
+                    image_url:'includes/png/machine_learning.png',
                     carousel:'carousel-item'
                 },{
-                    tittle:'VIEW DATE', 
-                    description:'This will help you communicate easily and quickly with Customers, Consumers, Constituents, in a cost-effective and preferred way.', 
-                    img_alt:'viewdate', 
-                    image_url:'includes/png/Viewdate.png',
+                    tittle:'Laravel Relational DB with Authentication', 
+                    description:'User Management admin to manage the permissions role for each user on a web application and Product Management admin to perform crud operations to manage product\'s categories and tags.', 
+                    img_alt:'advanced_reelations_withauth', 
+                    image_url:'includes/png/advanced_reelations_withauth.png',
                     carousel:'carousel-item'
                 },{
-                    tittle:'REQUEST A QUOTE', 
-                    description:'Request a quote for affordable WEB services and more, scroll down to find contact form and for other enquiries.', 
-                    img_alt:'requestquote', 
-                    image_url:'includes/png/Requestaquote.png',
+                    tittle:'Visual Analysis for Covid Stats', 
+                    description:'On this project an open source JSON data was used to analyse covid stats during the year 2020. The technology used in this project is Vue.js, HTML, CSS, Bootstrap5 and Github pages to host it.', 
+                    img_alt:'covid_stats', 
+                    image_url:'includes/png/covid_stats.png',
                     carousel:'carousel-item'
                 },{
-                    tittle:'PAYMENT METHOD', 
-                    description:'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.', 
-                    img_alt:'paymentmethod', 
-                    image_url:'includes/png/Paymentmethod.png',
+                    tittle:'Users API Integration', 
+                    description:'Basic data retrieval from an API to storage in a database and data presentation. OOP principles applied using the Laravel framework and MVC architecture.', 
+                    img_alt:'users_api', 
+                    image_url:'includes/png/users_api.png',
                     carousel:'carousel-item'
                 },{
-                    tittle:'CREATE RESUME', 
-                    description:'Use professional field-tested resume templates that follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free!', 
-                    img_alt:'resume', 
-                    image_url:'includes/png/Resume.png',
+                    tittle:'Shopping Cart', 
+                    description:'Creating a shopping cart with Vue.js and managing the state of the cart, displaying the cart items, and handling user interactions such as adding and removing items.', 
+                    img_alt:'shopping_cart', 
+                    image_url:'includes/png/shopping_cart.png',
                     carousel:'carousel-item'
                 },{
-                    tittle:'WEB SERVICES', 
-                    description:'Safe, secure, reliable web hosting for your website or other business needs. With flexible packages and support available, you can rest assured that we’ll keep you connected and online.', 
-                    img_alt:'webservices', 
-                    image_url:'includes/png/Webservices.png',
-                    carousel:'carousel-item'
-                },{
-                    tittle:'WHAT\'S NEW', 
-                    description:'No news update yet!..', 
-                    img_alt:'news', 
-                    image_url:'includes/png/Whatsnew.png',
+                    tittle:'API Intergration', 
+                    description:'Product retrieval from an API and Javascript DOM manipulation to select product color and size. PHP Laravel Sanctum authentication was used to build the API.', 
+                    img_alt:'product_retrieval', 
+                    image_url:'includes/png/product_retrieval.png',
                     carousel:'carousel-item'
                 },
             ],
+            
 
             //Project history
             project_history_tittle: 'Project History',
@@ -76,6 +71,8 @@ const app = Vue.createApp({
                     name:'Fundamentals of OOP', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/OOP'
                 },{
                     name:'Data Analysis with Python', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/pythonDataAnalysis'
+                },{
+                    name:'Machine Learning using Linear Regression', image_url:'includes/png/github.png', img_alt:'github', link:'https://github.com/TerenceManyike/Machine-Learning'
                 },
             ],
 

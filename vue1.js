@@ -116,6 +116,11 @@ const app = Vue.createApp({
                 }
                 ,
                 {
+                  "skill": "Tailwind",
+                  "comfortability": 55
+                }
+                ,
+                {
                   "skill": "Bootstrap",
                   "comfortability": 80
                 }
