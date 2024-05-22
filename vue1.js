@@ -149,6 +149,69 @@ const app = Vue.createApp({
                   "skill": "Apache2, NGINX, tomcat",
                   "comfortability": 50
                 }
+            ],
+            experience: [
+              {
+                company:'The Data Company', 
+                tittle:'PHP Developer', 
+                location:'Johannesburg', 
+                description:'PHP Full Stack Development for a UK-based client in the Jewellery industry.', 
+                duties: [
+                  {
+                    duty : 'Windows OS, PHP, Laravel, Livewire, Tailwind, and PostgreSQL. (STACK)'
+                  },{
+                    duty : 'Developing invoice systems and providing sales analytics (Descriptive and Prescriptive).'
+                  },{
+                    duty : 'Git source control and Azure DevOps for workflow management.'
+                  }
+                ], 
+                start_date:'February 2024',
+                end_date:'April 2024'
+              },
+              {
+                company:'Epetstore/Cuberoute', 
+                tittle:'PHP Developer', 
+                location:'Johannesburg', 
+                description:'PHP Full Stack Development for a sales distribution & wholesaling company in the pet specialty channel in South Africa', 
+                duties: [
+                  {
+                    duty : 'PHP, Laravel, JavaScript, Vue.js, Bootstrap, Tailwind, and MySQL. (STACK)'
+                  },{
+                    duty : 'Developing modular systems and building/maintaining running promotions.'
+                  },{
+                    duty : 'SQL Reporting, Query optimization, and column indexing.'
+                  },{
+                    duty : 'Git source control and shortcut for workflow management.'
+                  }
+                ], 
+                start_date:'September 2023',
+                end_date:'January 2024'
+              },
+              {
+                company:'MJVN Investment (Pty) Ltd', 
+                tittle:'PHP Developer', 
+                location:'Pretoria', 
+                description:'PHP Full Stack Development for Louis Daniel and Diamond Corporation South Africa.', 
+                duties: [
+                  {
+                    duty : 'Linux OS, PHP, Laravel, JavaScript, jQuery, Bootstrap, and MySQL. (STACK)'
+                  },{
+                    duty : 'MVC Architectural design pattern, building UI for E-commerce websites.'
+                  },{
+                    duty : 'Developing database modules and responsive web designs.'
+                  },{
+                    duty : 'Query optimization and table normalization using eloquent relationships.'
+                  },{
+                    duty : 'Integrating server-to-server APIs using Sanctum Authentication'
+                  },{
+                    duty : 'Writing PHP Unit test cases for CRUD operations.'
+                  },{
+                    duty : 'Git/Bitbucket source control and Trello for workflow management.'
+                  }
+                ], 
+                start_date:'September 2021',
+                end_date:'September 2023'
+              }
             ]
         }
     }

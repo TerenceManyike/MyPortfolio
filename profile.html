@@ -58,7 +58,7 @@
           </div>
           <div class="col-md-6 name text-center">
             <p class="heading display-4">San Terence Manyike</p>
-            <p class="display-6">Junior Sofware Developer</p>
+            <p class="display-6">Sofware Engineer</p>
           </div>
           <div class="col-md-4 blank2"></div>
         </div>
@@ -105,66 +105,68 @@
                   I am passionate about data analysis and actively exploring machine learning. I have used QGIS, PostgreSQL, and Python to perform spatial and non spatial data analysis on geo server and Jupyter notebook for visualisation. I am eager for professional growth and keen to delve into cloud computing, particularly interested in AWS, Salesforce, or Azure.</p>
 
                 <div class="row">
-                  <div class="col-6">
-                    <p class="display-6 heading">Experience</p>
+                  <div class="col-12">
+                    <p class="display-6">Experience</p>
                   </div>
-                  <div class="col-6 mt-3 text-muted text-end">
-                    <p>2021-Current &nbsp; &nbsp; Pretoria</p>
+                </div>
+                <hr class="profile-hr">
+
+                <div v-for="data in experience" class="row">
+                  <div class="col-7">
+                    <p class="fs-5">
+                      <span class="fw-bold">{{ data.company }}, </span>
+                      <span class="fst-italic">{{ data.location }}</span> <br>
+                      <span class="text-muted fs-6 fst-italic">
+                        {{ data.start_date }} &nbsp;-&nbsp; {{ data.end_date }}
+                      </span>
+                    </p>
                   </div>
-                </div><hr class="profile-hr">
-                <p>Linux Mint OS, Apache2, MySQL, PHP, Laravel7, JSON, October/Winter CMS, JavaScript, jQuery,
-                  Bootstrap, CSS and HTML development for Diamond Corporation South Africa. <br>
-                  • Model-View-Controller (MVC) architectural design pattern<br>
-                  • Assist with UI/UX Design and building database models<br>
-                  • API integration using postman/Laravel Compass for testing<br>
-                  • GitHub/Bitbucket source control and MySQL Workbench for Database</p>
+                  <div class="col-5 text-muted text-end">
+                    <span class="fs-5 fw-bold fst-italic">- {{ data.tittle }}</span>
+                  </div>
+                  <p>{{ data.description }} <br>
+                    <span v-for="role in data.duties">
+                      • <span class="fs-6">
+                        {{ role.duty }} <br>
+                      </span>
+                    </span>
+                  </p>
+                </div>
                 
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="display-6 heading">Experience</p>
-                    </div>
-                    <div class="col-6 mt-3 text-muted text-end">
-                      <p>2021-Current &nbsp; &nbsp; Pretoria</p>
-                    </div>
-                  </div><hr class="profile-hr">
-                  <p>Linux Mint OS, Apache2, MySQL, PHP, Laravel7, JSON, October/Winter CMS, JavaScript, jQuery,
-                    Bootstrap, CSS and HTML development for Diamond Corporation South Africa. <br>
-                    • Model-View-Controller (MVC) architectural design pattern<br>
-                    • Assist with UI/UX Design and building database models<br>
-                    • API integration using postman/Laravel Compass for testing<br>
-                    • GitHub/Bitbucket source control and MySQL Workbench for Database</p>
-                
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="display-6 heading">Experience</p>
-                      </div>
-                      <div class="col-6 mt-3 text-muted text-end">
-                        <p>2021-Current &nbsp; &nbsp; Pretoria</p>
-                      </div>
-                    </div><hr class="profile-hr">
-                    <p>Linux Mint OS, Apache2, MySQL, PHP, Laravel7, JSON, October/Winter CMS, JavaScript, jQuery,
-                      Bootstrap, CSS and HTML development for Diamond Corporation South Africa. <br>
-                      • Model-View-Controller (MVC) architectural design pattern<br>
-                      • Assist with UI/UX Design and building database models<br>
-                      • API integration using postman/Laravel Compass for testing<br>
-                      • GitHub/Bitbucket source control and MySQL Workbench for Database</p>
-                
-                  <div class="row">
-                  <div class="col-6">
+                <div class="row">
+                  <div class="col-12">
                     <p class="display-6 heading">Education</p>
                   </div>
-                  <div class="col-6 mt-3 text-muted text-end">
-                    <p>2017-2021 &nbsp; &nbsp; Russia</p>
+                </div>
+                <hr class="profile-hr">
+                <div class="row">
+                  <div class="col-7">
+                    <p class="fst-italic fs-5">Lobachevsky State University of Nizhny Novgorod</p>
                   </div>
-                </div><hr class="profile-hr">
-                <p>I hold a Bachelor’s degree in Fundamenta Informatics and Information Technology from Lobachevsky State University of Nizhny Novgorod.</p>
-                <p class="display-6 heading">General Skills</p><hr class="profile-hr">
+                  <div class="col-5 text-muted text-end">
+                    <p>2017-2021 &nbsp; 
+                      <span class="fs-5 fw-bold fst-italic">- RUSSIA</span>
+                    </p>
+                  </div>
+                </div>
+                <p>I hold a Bachelor’s degree in Fundamenta Informatics and Information Technology.</p>
+                <p class="display-6 heading">Awards</p><hr class="profile-hr">
                 <ul>
-                  <li>Excellent Communication Skills</li>
-                  <li>Ability to Work Under Pressure</li>
-                  <li>Effective Time Management</li>
-                  <li>Ability to Work in a Team</li>
-                  <li>Fast Learner and Ability to Multitask</li>
+                  <li>Math Top Achiever
+                    Mbombela municipality
+                    Grade 12 (public School’s
+                    category).
+                  </li>
+                  <li>MINQUIZ Competition
+                    Mathematics and Science
+                    competition provincial and
+                    national finalist hosted by
+                    MINTEK.
+                  </li>
+                  <li>eV Challenge Project
+                    Battery-powered vehicle
+                    (Rotary Club of Nelspruit).
+                  </li>
                 </ul>
               </div>
               <div class="col-md-2"></div>
@@ -223,15 +225,14 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="jquery.js"></script>
-    <script src="javascript.js"></script>
-    <!-- Import Js -->
     <!-- Import Js -->
     <script src="vue1.js"></script>
     <script>
       const mountedApp = app.mount('#appp')
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>

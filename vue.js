@@ -92,11 +92,11 @@ const app = Vue.createApp({
                     link:'San/index.html',
                     description: 'Studying abroad gave me the chance to see a side of my major that I have never been exposed to.'
                 },{
-                    name:'Resume Builder', 
+                    name:'Github Profile', 
                     image_url:'includes/Projects.jpg', 
                     img_alt:'About my projects', 
-                    link:'My_projects.html',
-                    description: 'Create a resume for free that will stand out using a CV generator built with care.'
+                    link:'https://github.com/TerenceManyike',
+                    description: 'Discover my collection of projects on GitHub by visiting my profile. Dive in and explore my repositories!.'
                 },
             ]
         }
