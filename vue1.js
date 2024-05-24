@@ -1,4 +1,10 @@
 const app = Vue.createApp({
+    methods: {
+      generateCV() {
+        const pdfUrl = 'includes/SanManyikeUpdatedCV.pdf';
+        window.open(pdfUrl, '_blank');
+      }
+    },
     data(){
         return {
             skillset: [

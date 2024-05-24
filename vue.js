@@ -6,13 +6,13 @@ const app = Vue.createApp({
             about: [
                 {
                     tittle:'Data Analysis with Python', 
-                    description:'On this project random csv data was pulled from kaggle for data analysis. It starts from the basics of making dataframes using arrays, dictionaries, and csv data In the descriptive data analysis pivot tables were used to summarise the data from csv imports and to visualise the data in a a form of graphs and pie charts. Pandas, numpy and matplotlib are the modules used in this project.', 
+                    description:'CSV data manipulation from kaggle for data analysis. It starts from the basics of making dataframes using arrays, dictionaries, and csv data In the descriptive data analysis pivot tables were used to summarise the data from csv imports and to visualise the data in a a form of graphs and pie charts. Pandas, numpy and matplotlib are the modules used in this project.', 
                     img_alt:'jupyter_notebook', 
                     image_url:'includes/png/python_analysis.png',
                     carousel:'carousel-item active'
                 },{
                     tittle:'Machine Learning', 
-                    description:'Building and training a model to predict car prices in the future using Linear Regression. Some Machine Learning libraries from sklearn used are model_selection, linear_model and metrix.', 
+                    description:'Building and training a model to predict car prices in the future using Linear Regression. Some Machine Learning libraries from sklearn used are model selection, linear model and metrix.', 
                     img_alt:'machine_learning', 
                     image_url:'includes/png/machine_learning.png',
                     carousel:'carousel-item'
