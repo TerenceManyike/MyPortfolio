@@ -77,21 +77,21 @@ $(document).ready(function (){
     });
     
     //Scrolling to the sub-section page
-    var page_link = window.location.href;
-    var page_id = page_link.subString(page_link.lastIndexOf("#") + 1);
-    if(page_id == "about"){
-        $("body").animate({
-            scrollTop: $("#scroll-" + page_id).offset().top
-        },1000);
-    }
-    else if(page_id == "pricing"){
-        $("body").animate({
-            scrollTop: $("#scroll-" + page_id).offset().top
-        }, 2000);
-    }
-    else if(page_id == "portfolio"){
-        $("body").animate({
-            scrollTop: $("#scroll-" + page_id).offset().top
-        },3000);
-    }
+    // var page_link = window.location.href;
+    // var page_id = page_link.subString(page_link.lastIndexOf("#") + 1);
+    // if(page_id == "about"){
+    //     $("body").animate({
+    //         scrollTop: $("#scroll-" + page_id).offset().top
+    //     },1000);
+    // }
+    // else if(page_id == "pricing"){
+    //     $("body").animate({
+    //         scrollTop: $("#scroll-" + page_id).offset().top
+    //     }, 2000);
+    // }
+    // else if(page_id == "portfolio"){
+    //     $("body").animate({
+    //         scrollTop: $("#scroll-" + page_id).offset().top
+    //     },3000);
+    // }
 });
