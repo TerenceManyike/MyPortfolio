@@ -249,3 +249,24 @@ hr{
 .updated-footer{
     padding: 0;
 }
+
+.nationalChart{
+    padding: 20px 60px 80px 60px;
+}
+
+.more-provinces-accord{
+    border: .1px solid rgb(191, 191, 191);
+}
+
+.more-provinces-accord:hover{
+    box-shadow: 3px 3px 5px 3px;
+}
+
+.nav-tabs-margin{
+    margin-top: 100px !important;
+}
+
+/* .matricChart{
+    min-height: 200px;
+    padding-bottom: 20px;
+} */
