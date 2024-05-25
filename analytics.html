@@ -10,6 +10,16 @@
     <!-- Profile icon -->
     <link rel="shortcut icon" href="includes/STMLogo.png" type="image/png">
     <title>STM Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarEl = document.getElementById('calendar')
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            })
+            calendar.render()
+        })
+    </script>
 </head>
 <body>
     <div class="container-fluid updated-footer">
@@ -48,6 +58,7 @@
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">WEATHER FORECAST</button>
                             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">FOREIGN CURRENCY</button>
                             <button class="nav-link" id="nav-matric-tab" data-bs-toggle="tab" data-bs-target="#nav-matric" type="button" role="tab" aria-controls="nav-matric" aria-selected="false">MATRIC PASS RATE</button>
+                            <button class="nav-link" id="nav-calendar-tab" data-bs-toggle="tab" data-bs-target="#nav-calendar" type="button" role="tab" aria-controls="nav-calendar" aria-selected="false">FULL CALENDAR</button>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -165,7 +176,13 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 mt-4 p-4">
+                                    <div id='calendar'></div>
                                 </div>
                             </div>
                         </div>
