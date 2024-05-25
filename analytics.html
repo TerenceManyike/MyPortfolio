@@ -36,28 +36,118 @@
                         <li class="nav-item">
                             <a class="nav-link a-nav" href="#contacts">CONTACT</a>
                         </li>
-                        <li class="nav-item">
-                            <a name="login" class="nav-link a-nav" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="analytics-container mb-4">
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <div>
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <canvas id="myChart1"></canvas>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mixedChart">
-                        <canvas id="mixedChart"></canvas>
+        <div class="analytics-container mb-4 px-4">
+            <div class="row mb-4 nav-tabs-margin">
+                <div class="container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">WEATHER FORECAST</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">FOREIGN CURRENCY</button>
+                            <button class="nav-link" id="nav-matric-tab" data-bs-toggle="tab" data-bs-target="#nav-matric" type="button" role="tab" aria-controls="nav-matric" aria-selected="false">MATRIC PASS RATE</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-md-7 mt-4 p-4">
+                                    <div>
+                                        <canvas id="MpumalangaChart"></canvas>
+                                    </div>
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                SEE OTHER PROVINCES
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="EasternCapeChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="FreeStateChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="GautengChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="KwaZuluNatalChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="LimpopoChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="NorthernCapeChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="NorthWestChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="WesternCapeChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mt-4 nationalChart">
+                                    <div>
+                                        <canvas id="nationalChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <canvas id="myChart1"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mixedChart">
+                                        <canvas id="mixedChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-matric" role="tabpanel" aria-labelledby="nav-matric-tab">
+                            <div class="row">
+                                <div class="col-12 p-4">
+                                    <div>
+                                        <canvas class="matricChart" id="matricChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,6 +205,12 @@
     </div>
       
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="includes/aaea/aeae/aaee/aaea/aaea/aaea.js"></script>
+    <script src="includes/aaea/aeee/aaee/aaea/aaea.js"></script>
+    <script src="includes/aaee/aeae/aaea/aaea.js"></script>
+    <script src="includes/aaee/aeae/aaee.js"></script>
+    <script src="includes/aaee/aaee.js"></script>
+    <script src="includes/aaee.js"></script>
       
     <script>
         const ctx = document.getElementById('myChart');
