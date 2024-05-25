@@ -1,6 +1,7 @@
 const mpumalanga_weather = document.getElementById('MpumalangaChart');
 const national_weather = document.getElementById('nationalChart');
 const matric_pass = document.getElementById('matricChart');
+const math_science = document.getElementById('mathscienceChart');
 
 let other_provinces = [
     {
@@ -267,3 +268,51 @@ const chartConfig = {
 
 // Initialize the chart
 new Chart(matric_pass, chartConfig);
+
+new Chart(math_science, {
+    type: 'line', // Define the default chart type
+    data: {
+        datasets: [
+            {
+                type: 'line',
+                label: 'Mathematics',
+                data: [32.071, 28.152, 23.796, 30.882, 34.451, 33.874, 41.273],
+                borderColor: '#1A5276', // Add color
+                // backgroundColor: '#1A5276',
+                borderWidth: 1
+            },
+            {
+                type: 'line',
+                label: 'Physical Science',
+                data: [29.208, 30.369, 32.572, 26.641, 30.398, 34.998, 35.468],
+                borderColor: 'red', // Add color
+                backgroundColor: '#f79e9e',
+                borderWidth: 1
+            }
+        ],
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
+    },
+    options: {
+        scales: {
+            x: {
+                title: {
+                display: true,
+                text: 'Years'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                display: true,
+                text: 'Percentage'
+                }
+            }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Mathematics and Physical Science 60% Threshold'
+            }
+        }
+    }
+});
