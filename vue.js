@@ -5,7 +5,7 @@ const app = Vue.createApp({
             about_tittle: 'Project Description',
             about: [
                 {
-                    tittle:'Data Analysis with Python', 
+                    tittle:'Data Analytics', 
                     description:'CSV data manipulation from Kaggle for analysis. From creating dataframes, using pivot tables for summarization, and visualizing data with graphs and charts. Key tools are Pandas, NumPy, and Matplotlib.', 
                     img_alt:'jupyter_notebook', 
                     image_url:'includes/png/python_analysis.png',
@@ -49,7 +49,6 @@ const app = Vue.createApp({
                 },
             ],
             
-
             //Project history
             project_history_tittle: 'Project History',
             project_history: [
