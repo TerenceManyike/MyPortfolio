@@ -178,7 +178,6 @@ hr{
 }
 .copyrights{
     width: auto;
-    height: 100px;
     background-color: black;
     opacity: 1;
 }
@@ -266,7 +265,21 @@ hr{
     margin-top: 100px !important;
 }
 
-/* .matricChart{
-    min-height: 200px;
-    padding-bottom: 20px;
-} */
+#MpumalangaChart, #EasternCapeChart, #FreeStateChart, #GautengChart, #KwaZuluNatalChart, #LimpopoChart, #NorthernCapeChart, #NorthWestChart, #WesternCapeChart, #nationalChart, #matricChart, #mathscienceChart{
+    min-height: 300px;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    min-height: 450px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #1A5276; /* Light peach color for the current day */
+    color: #1A5276; /* Dark blue color for the text */
+}
+
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+    color: white; /* Dark blue color for the date number */
+}
