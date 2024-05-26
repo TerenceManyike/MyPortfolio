@@ -90,6 +90,8 @@ other_provinces.forEach(province => {
             labels: ['January', 'February', 'March', 'April', 'May', 'June']
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false, // This allows the chart to respect the defined height
             scales: {
                 x: {
                     title: {
@@ -146,6 +148,8 @@ new Chart(mpumalanga_weather, {
         labels: ['January', 'February', 'March', 'April', 'May', 'June']
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
         scales: {
             x: {
                 title: {
@@ -184,11 +188,13 @@ new Chart(national_weather, {
             '#ffc4c4', '#ffc4ee', '#efc4ff', '#cac4ff', '#c4edff',
             '#cbffc4', '#e8ffc4', '#fffec4', '#ffdfc4'
         ],
-        borderColor: 'rgb(182, 4, 247)',
+        borderColor: '#1A5276',
         borderWidth: 1
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
         plugins: {
             title: {
                 display: true,
@@ -242,6 +248,8 @@ const chartConfig = {
         datasets: datasets
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
         scales: {
             x: {
                 title: {
@@ -293,6 +301,8 @@ new Chart(math_science, {
         labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
         scales: {
             x: {
                 title: {
