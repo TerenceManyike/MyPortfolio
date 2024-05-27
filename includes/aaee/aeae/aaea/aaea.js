@@ -33,20 +33,27 @@ $(document).ready(function() {
 
 
     function fetchExchangeRate() {
-        // Example API URL (replace with your actual API endpoint)
-        const apiUrl = 'https://api.exchangerate-api.com/v4/latest/USD';
-        
-        $.getJSON(apiUrl, function(data) {
+        const apiUrlUsd = 'https://api.exchangerate-api.com/v4/latest/USD';
+        $.getJSON(apiUrlUsd, function(data) {
             const usdToZar = data.rates.ZAR;
             const date = new Date(data.time_last_updated * 1000).toLocaleDateString();
-            
-            $('#rate').text(`1 USD = ${usdToZar.toFixed(2)} ZAR`);
-            $('#rate-date').text(`Last updated: ${date}`);
+            $('#rate-usd').text(`1 USD = ${usdToZar.toFixed(2)} ZAR`);
+            $('#rate-date-usd').text(`Last updated: ${date}`);
         }).fail(function() {
-            $('#rate').text('Failed to fetch data');
+            $('#rate-usd').text('Failed to fetch data');
+        });
+
+        const apiUrlGbp = 'https://api.exchangerate-api.com/v4/latest/GBP';
+        $.getJSON(apiUrlGbp, function(data) {
+            const gbpToZar = data.rates.ZAR;
+            const date = new Date(data.time_last_updated * 1000).toLocaleDateString();
+            $('#rate-gbp').text(`1 GBP = ${gbpToZar.toFixed(2)} ZAR`);
+            $('#rate-date-gbp').text(`Last updated: ${date}`);
+        }).fail(function() {
+            $('#rate-gbp').text('Failed to fetch data');
         });
     }
-    
+
     fetchExchangeRate();
     setInterval(fetchExchangeRate, 60000); // Update every 60 seconds
 }); 

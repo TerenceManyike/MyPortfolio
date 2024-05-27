@@ -301,7 +301,7 @@ hr{
 }
 
 .clock #Date {
-    font-size: 30px;
+    font-size: 10px;
     text-align: center;
     margin-bottom: 10px;
     color: #fff;
@@ -313,15 +313,13 @@ hr{
     list-style: none;
 }
 .clock ul li {
-    font-size: 48px;
+    font-size: 30px;
     margin: 0 5px;
     color: #fff;
 }
 
 .exchange-rate {
     background: #1A5276;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
     color: #fff;
 }
@@ -331,15 +329,16 @@ hr{
     border-radius: 10px;
 }
 
-.exchange-rate:hover {
-    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+.exchange-currency-rate{
+    background: #1A5276;
+    border-radius: 10px !important;
 }
 
 .exchange-rate div {
-    font-size: 20px;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 
 .exchange-rate .rate {
-    font-size: 48px;
+    font-size: 30px;
 }
