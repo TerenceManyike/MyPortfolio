@@ -242,7 +242,7 @@ hr{
 }
 
 .analytics-container{
-    padding-top: 70px !important;
+    padding-top: 20px !important;
 }
 
 .analytics-background{
@@ -269,7 +269,7 @@ hr{
     margin-top: 100px !important;
 }
 
-#MpumalangaChart, #EasternCapeChart, #FreeStateChart, #GautengChart, #KwaZuluNatalChart, #LimpopoChart, #NorthernCapeChart, #NorthWestChart, #WesternCapeChart, #nationalChart, #matricChart, #mathscienceChart{
+#MpumalangaChart, #EasternCapeChart, #FreeStateChart, #GautengChart, #KwaZuluNatalChart, #LimpopoChart, #NorthernCapeChart, #NorthWestChart, #WesternCapeChart, #nationalChart, #matricChart, #mathscienceChart, #PiTaxChart, #SmTaxChart, #TDutyChart, #TTaxChart{
     min-height: 300px;
 }
 
