@@ -269,7 +269,7 @@ hr{
     margin-top: 100px !important;
 }
 
-#MpumalangaChart, #EasternCapeChart, #FreeStateChart, #GautengChart, #KwaZuluNatalChart, #LimpopoChart, #NorthernCapeChart, #NorthWestChart, #WesternCapeChart, #nationalChart, #matricChart, #mathscienceChart, #PiTaxChart, #SmTaxChart, #TDutyChart, #TTaxChart{
+#MpumalangaChart, #EasternCapeChart, #FreeStateChart, #GautengChart, #KwaZuluNatalChart, #LimpopoChart, #NorthernCapeChart, #NorthWestChart, #WesternCapeChart, #nationalChart, #matricChart, #mathscienceChart, #wroteNscChart, #dropOutChart, #realPassChart{
     min-height: 300px;
 }
 
@@ -286,4 +286,59 @@ hr{
 
 .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
     color: white; /* Dark blue color for the date number */
+    /* color: #ffc9c9; */
+}
+
+.clock:hover{
+    box-shadow: 3px 3px 5px 3px;
+}
+
+.clock {
+    background: #1A5276;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clock #Date {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.clock ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+.clock ul li {
+    font-size: 30px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.exchange-rate {
+    background: #1A5276;
+    text-align: center;
+    color: #fff;
+}
+
+.exchange-currency-rate:hover {
+    box-shadow: 3px 3px 5px 3px;
+    border-radius: 10px;
+}
+
+.exchange-currency-rate{
+    background: #1A5276;
+    border-radius: 10px !important;
+}
+
+.exchange-rate div {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.exchange-rate .rate {
+    font-size: 30px;
 }
