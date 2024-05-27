@@ -13,6 +13,8 @@
     <!-- Full calendar     -->
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
     <script src="includes/aaea/aeae/aaee/aaea/aaea/aaea.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/CSS3-digital-clock/index.html" />
 </head>
 <body>
     <div class="container-fluid updated-footer analytics-background">
@@ -225,12 +227,90 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample5">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne5">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" aria-expanded="false" aria-controls="flush-collapseOne5">
+                                                WROTE NSC, PASSED, AND FAILED 
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne5" data-bs-parent="#accordionFlushExample5">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="wroteNscChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample6">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne6">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne6" aria-expanded="false" aria-controls="flush-collapseOne6">
+                                                GRADE 10 IN 2021 AND DROPED OUT
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne6" data-bs-parent="#accordionFlushExample6">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="dropOutChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion accordion-flush mt-4 mb-4" id="accordionFlushExample7">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne6">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne7" aria-expanded="false" aria-controls="flush-collapseOne7">
+                                                DROPOUT AND REAL PASS RATE
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne7" data-bs-parent="#accordionFlushExample7">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="realPassChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 mt-4 p-4">
+                            <div class="row">
+                                <div class="col-lg-4 mt-4 p-4">
+                                    <div class="clock">
+                                        <div id="Date"></div>
+                                        <ul>
+                                            <li id="hours"> </li>
+                                            <li id="point">:</li>
+                                            <li id="min"> </li>
+                                            <li id="point">:</li>
+                                            <li id="sec"> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exchange-currency-rate">
+                                        <div class="exchange-rate mt-4">
+                                            <div id="rate-date mt-4"></div>
+                                            <div class="rate" id="rate">Loading...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 p-2">
                                     <div id='calendar'></div>
                                 </div>
                             </div>

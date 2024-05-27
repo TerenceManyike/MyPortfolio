@@ -2,6 +2,9 @@ const mpumalanga_weather = document.getElementById('MpumalangaChart');
 const national_weather = document.getElementById('nationalChart');
 const matric_pass = document.getElementById('matricChart');
 const math_science = document.getElementById('mathscienceChart');
+const wrote_nsc = document.getElementById('wroteNscChart');
+const drop_out = document.getElementById('dropOutChart');
+const real_pass = document.getElementById('realPassChart');
 
 let other_provinces = [
     {
@@ -322,6 +325,176 @@ new Chart(math_science, {
             title: {
                 display: true,
                 text: 'Mathematics and Physical Science 60% Threshold'
+            }
+        }
+    }
+});
+
+new Chart(wrote_nsc, {
+    type: 'line', // Define the default chart type
+    data: {
+        datasets: [
+            {
+                type: 'line',
+                label: 'Passed',
+                data: [77917, 30637, 109030, 136366, 74400, 50429, 9740, 33808, 50620],
+                borderColor: '#009307', // Add color
+                backgroundColor: '#009307',
+                borderWidth: 1
+            },
+            {
+                type: 'line',
+                label: 'Failed',
+                data: [17780, 3814, 18667, 21545, 19133, 15105, 3109, 7610, 11457],
+                borderColor: '#a00505', // Add color
+                backgroundColor: '#a00505',
+                borderWidth: 1
+            },
+            {
+                type: 'bar',
+                label: 'Wrote NSC',
+                data: [95697, 34451, 127697, 157911, 93533, 65534, 12842, 41418, 62077],
+                borderColor: '#b29b05', // Add color
+                backgroundColor: '#fbf0a9',
+                borderWidth: 1
+            }
+        ],
+        labels: [
+            'Eastern Cape', 'Free State', 'Gauteng', 
+            'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 
+            'Northern Cape', 'North West', 'Western Cape'
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
+        scales: {
+            x: {
+                title: {
+                display: true,
+                text: 'Provinces'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                display: true,
+                text: 'Number Of Learners'
+                }
+            }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Learners who wrote, passed and failed Matric per Province in 2023'
+            }
+        }
+    }
+});
+
+new Chart(drop_out, {
+    type: 'line', // Define the default chart type
+    data: {
+        datasets: [
+            {
+                type: 'bar',
+                label: 'Started Grade 10 In 2021',
+                data: [138136, 61316, 179375, 240368, 147934, 92596, 22775, 69689, 84597],
+                borderColor: '#009307', // Add color
+                backgroundColor: '#009307',
+                borderWidth: 1
+            },
+            {
+                type: 'bar',
+                label: 'Dropped Out Grade 10 To 12',
+                data: [42439, 26865, 51678, 82457, 54401, 27062, 9933, 28271, 22520],
+                borderColor: '#a00505', // Add color
+                backgroundColor: '#a00505',
+                borderWidth: 1
+            }
+        ],
+        labels: [
+            'Eastern Cape', 'Free State', 'Gauteng', 
+            'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 
+            'Northern Cape', 'North West', 'Western Cape'
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
+        scales: {
+            x: {
+                title: {
+                display: true,
+                text: 'Provinces'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                display: true,
+                text: 'Number Of Learners'
+                }
+            }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Learners that did grade 10 in 2021 and dropped out by 2023'
+            }
+        }
+    }
+});
+
+new Chart(real_pass, {
+    type: 'line', // Define the default chart type
+    data: {
+        datasets: [
+            {
+                type: 'line',
+                label: 'Real Pass Rate',
+                data: [56.4, 50.0, 60.8, 56.7, 50.3, 54.5, 42.8, 48.5, 59.8],
+                borderColor: '#009307', // Add color
+                backgroundColor: '#009307',
+                borderWidth: 1
+            },
+            {
+                type: 'line',
+                label: 'Dropout Rate',
+                data: [30.7, 43.8, 28.8, 34.3, 36.8, 29.2, 43.6, 40.6, 26.6],
+                borderColor: '#a00505', // Add color
+                backgroundColor: '#a00505',
+                borderWidth: 1
+            }
+        ],
+        labels: [
+            'Eastern Cape', 'Free State', 'Gauteng', 
+            'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 
+            'Northern Cape', 'North West', 'Western Cape'
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false, // This allows the chart to respect the defined height
+        scales: {
+            x: {
+                title: {
+                display: true,
+                text: 'Provinces'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                display: true,
+                text: 'Rate In Percentage'
+                }
+            }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Dropout rate and real pass rate per Province for 2023'
             }
         }
     }
