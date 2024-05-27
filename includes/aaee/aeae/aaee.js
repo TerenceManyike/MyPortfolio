@@ -223,7 +223,7 @@ const provincesData = [
 
 // Create datasets for line charts
 const lineDatasets = provincesData.map(province => ({
-    type: 'line',
+    type: 'scatter',
     label: province.label,
     data: province.data,
     borderColor: province.borderColor,
