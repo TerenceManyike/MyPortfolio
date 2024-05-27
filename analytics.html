@@ -15,7 +15,7 @@
     <script src="includes/aaea/aeae/aaee/aaea/aaea/aaea.js"></script>
 </head>
 <body>
-    <div class="container-fluid updated-footer">
+    <div class="container-fluid updated-footer analytics-background">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand a-nav" href="index.html"><img class="avatar" src="includes/Profile.png" alt="logo" style="border: 1px solid white;">&nbsp; STM Analytics</a>
@@ -43,13 +43,13 @@
                 </div>
             </div>
         </nav>
-        <div class="analytics-container mb-4 px-4">
-            <div class="row mb-4 nav-tabs-margin">
+        <div class="analytics-container px-4">
+            <div class="row pb-4 nav-tabs-margin">
                 <div class="container">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">WEATHER FORECAST</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">FOREIGN CURRENCY</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">SARS TAX BRACKETS</button>
                             <button class="nav-link" id="nav-matric-tab" data-bs-toggle="tab" data-bs-target="#nav-matric" type="button" role="tab" aria-controls="nav-matric" aria-selected="false">MATRIC PASS RATE</button>
                             <button class="nav-link" id="nav-calendar-tab" data-bs-toggle="tab" data-bs-target="#nav-calendar" type="button" role="tab" aria-controls="nav-calendar" aria-selected="false">FULL CALENDAR</button>
                             <button class="nav-link" id="nav-invoice-tab" data-bs-toggle="tab" data-bs-target="#nav-invoice" type="button" role="tab" aria-controls="nav-invoice" aria-selected="false">GENERATE INVOICE</button>
@@ -58,7 +58,7 @@
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div class="row">
+                            <div class="row justify-content-center">
                                 <div class="col-md-7 mt-4 p-4">
                                     <div>
                                         <canvas id="MpumalangaChart"></canvas>
@@ -67,7 +67,7 @@
                                         <div class="accordion-item more-provinces-accord">
                                             <h2 class="accordion-header" id="flush-headingOne">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                SEE OTHER PROVINCES
+                                                    SEE OTHER PROVINCES
                                                 </button>
                                             </h2>
                                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -119,7 +119,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 mt-4 nationalChart">
+                                <div class="col-sm-8 col-md-5 col-lg-4 mt-4 nationalChart">
                                     <div>
                                         <canvas id="nationalChart"></canvas>
                                     </div>
@@ -128,29 +128,83 @@
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 mt-4 p-4">
                                     <div>
-                                        <canvas id="myChart"></canvas>
+                                        <canvas id="PiTaxChart"></canvas>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div>
-                                        <canvas id="myChart1"></canvas>
+                                <div class="col-md-6 p-4">
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample2">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                                                    TAXES FOR SMALL BUSINESS
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2" data-bs-parent="#accordionFlushExample2">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="SmTaxChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mixedChart">
-                                        <canvas id="mixedChart"></canvas>
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample3">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne3">
+                                                    TRANSFER DUTY
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3" data-bs-parent="#accordionFlushExample3">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="TDutyChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion accordion-flush mt-4" id="accordionFlushExample4">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne4">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne4">
+                                                    TURNOVER TAX
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample4">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <canvas id="TTaxChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-matric" role="tabpanel" aria-labelledby="nav-matric-tab">
                             <div class="row justify-content-center">
-                                <div class="col-md-8 mt-4 p-4">
+                                <div class="col-md-6 mt-4 p-4">
                                     <div>
                                         <canvas class="matricChart" id="matricChart"></canvas>
                                     </div>
+                                </div>
+                                <div class="col-md-6 mt-4 p-6">
                                     <div class="accordion accordion-flush mt-4" id="accordionFlushExample1">
                                         <div class="accordion-item more-provinces-accord">
                                             <h2 class="accordion-header" id="flush-headingOne1">
@@ -268,86 +322,6 @@
     <script src="includes/aaee/aeae/aaee.js"></script>
     <script src="includes/aaee/aaee.js"></script>
     <script src="includes/aaee.js"></script>
-      
-    <script>
-        const ctx = document.getElementById('myChart');
-        const ctx1 = document.getElementById('myChart1');
-        const mixedCtx = document.getElementById('mixedChart');
-      
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                // backgroundColor: '#1A5276',
-                borderColor: '#1A5276',
-                borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-
-        new Chart(ctx1, {
-          type: 'line',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
-              borderColor: 'red',
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-
-        new Chart(mixedCtx, {
-            type: 'bar', // Define the default chart type
-            data: {
-                datasets: [
-                {
-                    type: 'bar',
-                    label: 'Bar Dataset',
-                    data: [10, 20, 30, 40],
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Add color
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
-                },
-                {
-                    type: 'line',
-                    label: 'Line Dataset',
-                    data: [50, 10, 30, 25],
-                    borderColor: 'rgba(255, 99, 132, 1)', // Add color
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    fill: false
-                }
-                ],
-                labels: ['January', 'February', 'March', 'April']
-            },
-            options: {
-                scales: {
-                y: {
-                    beginAtZero: true
-                }
-                }
-            }
-        });
-
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>

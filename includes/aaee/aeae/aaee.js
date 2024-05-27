@@ -185,10 +185,10 @@ new Chart(national_weather, {
         datasets: [{
         data: [34, 35, 36, 36, 12, 11, 39, 36, 33 ],
         backgroundColor: [ 
-            '#ffc4c4', '#ffc4ee', '#efc4ff', '#cac4ff', '#c4edff',
-            '#cbffc4', '#e8ffc4', '#fffec4', '#ffdfc4'
+            '#a00000', '#a04b00', '#a08000', '#00a045', '#00a09d',
+            '#30a000', '#000da0', '#1A5276', '#7800a0'
         ],
-        borderColor: '#1A5276',
+        borderColor: 'white',
         borderWidth: 1
         }]
     },
