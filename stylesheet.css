@@ -342,3 +342,58 @@ hr{
 .exchange-rate .rate {
     font-size: 30px;
 }
+
+.btn-invoice{
+    background-color: white;
+    color: #1A5276;
+    border: 1px solid #1A5276;
+    width: 70%;
+}
+
+.btn-invoice:hover{
+    background-color: #1A5276;
+    color: white;
+}
+
+.btn-invoice-close{
+    background-color: white;
+    color: #670101;
+    border: 1px solid #670101;
+}
+
+.btn-invoice-close:hover{
+    background-color: #670101;
+    color: white;
+}
+
+.btn-invoice-download{
+    background-color: white;
+    color: #1A5276;
+    border: 1px solid #1A5276;
+}
+
+.btn-invoice-download:hover{
+    background-color: #1A5276;
+    color: white;
+}
+
+.invoice-footer{
+    background-color: #1A5276;
+    color: white;
+}
+
+.small-text{
+    font-size: 10px;
+}
+
+.medium-text{
+    font-size: 13px;
+}
+
+.invoice-no{
+    color: rgb(182, 38, 38);
+}
+
+.invoice-shade{
+    background-color: rgb(191, 191, 191);
+}
