@@ -469,51 +469,56 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div id="modal-section" class="row modal-body p-0 m-0">
-                                                    <div id="message-box" style="display: none; background-color: #1A5276; color: white; padding: 20px;">
-                                                        Invoice Downloaded Successfully!.
-                                                    </div>
+                                                    
                                                     <div class="col-2 invoice-shade p-0 m-0">
-                                                        <div class="invoice-no text-end fs-5 mt-4">
+                                                        <div class="invoice-no text-end fs-3 mt-4">
+                                                            <div class="large-margin"></div>
                                                             <strong>NO#</strong>
                                                         </div>
                                                     </div>
                                                     <div class="col-10 p-0 m-0">
-                                                        <div class="invoice-no text-start fs-5 mt-4">
-                                                            458908089797
+                                                        <div class="invoice-no text-start fs-3 mt-4">
+                                                            <div class="large-margin"></div>
+                                                            458908080808
                                                         </div>
                                                         
-                                                        <div class="text-center fs-3 mb-1">
+                                                        <div class="text-center fs-1 mb-4">
                                                             INVOICE
                                                         </div>
                                                         <div class="invoice-items">
                                                             <div class="container">
-                                                                <div class="row mb-1">
+                                                                <div class="row mb-4">
                                                                     <div class="col-12 text-start">
                                                                         <div>
-                                                                            Date: January 1, 2024
+                                                                            Date: <span id="current-date"></span>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-6 text-start medium-text">
+                                                                    <div class="col-6"></div>
+                                                                    <div class="col-6 text-end medium-text">
                                                                         <div>Bill From:</div>
                                                                         <div>Your Company Name</div>
                                                                         <div>Company Address One</div>
                                                                         <div>Company Address Two</div>
-                                                                        <div>Email</div>
-                                                                        <div>Phone</div>
+                                                                        <div>Company Email</div>
+                                                                        <div>Company Phone</div>
                                                                     </div>
-                                                                    <div class="col-6 text-end medium-text">
+                                                                    <div class="col-6 text-start medium-text">
                                                                         <div>Bill To:</div>
                                                                         <div>Client Name</div>
                                                                         <div>Client Address One</div>
                                                                         <div>Client Address Two</div>
-                                                                        <div>Email</div>
-                                                                        <div>Phone</div>
+                                                                        <div>Client Email</div>
+                                                                        <div>Client Phone</div>
+                                                                    </div>
+                                                                    <div class="col-6"></div>
+                                                                    <div class="col-12 fs-4 text-center">
+                                                                        Invoice Items
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col">
                                                                         <div class="table-responsive medium-text">
-                                                                            <table class="table table-hover mb-1">
+                                                                            <table class="table table-hover mb-3">
                                                                                 <thead>
                                                                                     <tr>
                                                                                         <th>Item</th>
@@ -535,39 +540,64 @@
                                                                                         <td>R15.00</td>
                                                                                         <td>R15.00</td>
                                                                                     </tr>
+                                                                                    <tr>
+                                                                                        <td>-</td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>-</td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td><strong>Subtotal:</strong></td>
+                                                                                        <td>R115.00</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td><strong>Vat (15%):</strong></td>
+                                                                                        <td>R15.00</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td><strong>Total:</strong></td>
+                                                                                        <td><strong>R130.00</strong></td>
+                                                                                    </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="text-end mb-3">
-                                                                                <div class="mb-1">
-                                                                                    <strong>Subtotal:</strong> R115.00
-                                                                                </div>
-                                                                                <div class="mb-1">
-                                                                                    <strong>Vat (15%):</strong> R15.00
-                                                                                </div>
-                                                                                <div class="">
-                                                                                    <strong>Total: R130.00</strong>
-                                                                                </div>
-                                                                            </div>
+                                                                            <div class="larger-margin"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 invoice-footer text-center p-0 m-0 p-4">
-                                                        <div class="px-4">
-                                                            <p class="small-text">&copy; 
+                                                    <div class="col-12 invoice-footer text-center p-0 m-0">
+                                                        <div class="p-1">
+                                                            <div class="small-text text-center invoice-footer-text">&copy; 
                                                                 2024 STM Analytics. All rights reserved. Empowering data-driven decisions for a smarter tomorrow. Contact us at +27790246772 or terrencemanyike@gmail.com.
-                                                            </p>
+                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
+                                                    <button id="message-box" type="button" class="btn btn-invoice-download" style="border-right: 20px solid #1A5276; display: none;">
+                                                        DOWNLOADING!...
+                                                    </button>
                                                     <button type="button" class="btn btn-invoice-close" data-bs-dismiss="modal">CLOSE</button>
                                                     <button id="download-invoice" type="button" class="btn btn-invoice-download">
                                                         DOWNLOAD INVOICE
                                                     </button>
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -648,7 +678,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="includes/aaea/aeae/aaee/aaea/aaea/aaea.js"></script>
     <script src="includes/aaea/aeee/aaee/aaea/aaea.js"></script>
