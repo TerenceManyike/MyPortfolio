@@ -383,11 +383,11 @@ hr{
 }
 
 .small-text{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .medium-text{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .invoice-no{
@@ -395,5 +395,26 @@ hr{
 }
 
 .invoice-shade{
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(214, 213, 213);
+}
+
+.invoice-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.small-margin{
+    margin: 20px;
+}
+
+.large-margin{
+    margin: 60px;
+}
+
+.larger-margin{
+    margin: 120px;
+}
+
+.invoice-footer-text{
+    padding: 36px 40px;
 }
