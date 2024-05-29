@@ -20,7 +20,7 @@
     <div class="container-fluid updated-footer analytics-background">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand a-nav" href="index.html"><img class="avatar" src="includes/Profile.png" alt="logo" style="border: 1px solid white;">&nbsp; STM Analytics</a>
+                <a class="navbar-brand a-nav" href="index.html"><img class="avatar" src="includes/Profile.png" alt="logo" style="border: 1px solid white;">&nbsp; STM Analytics&nbsp;</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,15 +47,15 @@
         </nav>
         <div class="analytics-container px-4">
             <div class="row pb-4 nav-tabs-margin">
-                <div class="container">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">WEATHER FORECAST</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">SARS TAX BRACKETS</button>
-                            <button class="nav-link" id="nav-matric-tab" data-bs-toggle="tab" data-bs-target="#nav-matric" type="button" role="tab" aria-controls="nav-matric" aria-selected="false">MATRIC PASS RATE</button>
-                            <button class="nav-link" id="nav-calendar-tab" data-bs-toggle="tab" data-bs-target="#nav-calendar" type="button" role="tab" aria-controls="nav-calendar" aria-selected="false">FULL CALENDAR</button>
-                            <button class="nav-link" id="nav-invoice-tab" data-bs-toggle="tab" data-bs-target="#nav-invoice" type="button" role="tab" aria-controls="nav-invoice" aria-selected="false">GENERATE INVOICE</button>
-                            <button class="nav-link" id="nav-poster-tab" data-bs-toggle="tab" data-bs-target="#nav-poster" type="button" role="tab" aria-controls="nav-poster" aria-selected="false">GENERATE POSTER</button>
+                <div class="col-12 m-0 p-0">
+                    <nav class="m-0 p-0">
+                        <div class="row nav analytics-nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">WEATHER FORECAST</button>
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">SARS TAX BRACKETS</button>
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link" id="nav-matric-tab" data-bs-toggle="tab" data-bs-target="#nav-matric" type="button" role="tab" aria-controls="nav-matric" aria-selected="false">MATRIC PASS RATE</button>
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link" id="nav-calendar-tab" data-bs-toggle="tab" data-bs-target="#nav-calendar" type="button" role="tab" aria-controls="nav-calendar" aria-selected="false">FULL CALENDAR</button>
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link" id="nav-invoice-tab" data-bs-toggle="tab" data-bs-target="#nav-invoice" type="button" role="tab" aria-controls="nav-invoice" aria-selected="false">GENERATE INVOICE</button>
+                            <button class="analytics-tab-color col-12 col-sm-6 col-md-4 col-lg-2 text-light nav-link" id="nav-poster-tab" data-bs-toggle="tab" data-bs-target="#nav-poster" type="button" role="tab" aria-controls="nav-poster" aria-selected="false">GENERATE POSTER</button>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -378,6 +378,13 @@
                                                 <div class="col-12">
                                                     <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Phone">
                                                 </div>
+                                                <div class="col-12">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select id="inputState" class="form-select">
+                                                      <option selected>Choose...</option>
+                                                      <option>...</option>
+                                                    </select>
+                                                  </div>
                                             </form>
                                         </div>
                                         <div class="col-md-5">
@@ -475,14 +482,14 @@
                                                                             Date: <span id="current-date"></span>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-6 col-md-7"></div>
-                                                                    <div class="col-6 col-md-5 text-start medium-text">
+                                                                    <div class="col-6"></div>
+                                                                    <div class="col-6 text-end medium-text">
                                                                         <div>Bill From:</div>
                                                                         <div>Your Company Name</div>
                                                                         <div>Company Address One</div>
                                                                         <div>Company Address Two</div>
                                                                     </div>
-                                                                    <div class="col-6 col-md-7 text-start medium-text">
+                                                                    <div class="col-6 text-start medium-text">
                                                                         <div>Bill To:</div>
                                                                         <div>Client Name</div>
                                                                         <div>Client Address One</div>
@@ -490,7 +497,7 @@
                                                                         <div>Client Email</div>
                                                                         <div>Client Phone</div>
                                                                     </div>
-                                                                    <div class="col-6 col-md-5 text-start">
+                                                                    <div class="col-6 text-end">
                                                                         <div>Company Email</div>
                                                                         <div>Company Phone</div>
                                                                     </div>
@@ -518,10 +525,10 @@
                                                                                         <td>R20.00</td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>Item 2</td>
-                                                                                        <td>1</td>
-                                                                                        <td>R15.00</td>
-                                                                                        <td>R15.00</td>
+                                                                                        <td>-</td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td>-</td>
@@ -673,6 +680,15 @@
     <script src="includes/aaee/aeae/aaee.js"></script>
     <script src="includes/aaee/aaee.js"></script>
     <script src="includes/aaee/invoice.js"></script>
+
+    <script>
+        //  
+        $(document).ready(function() {
+            $('#.-tab-color').on('click', function() {
+                $(this).css('color', 'red');
+            })
+        })
+    </script>
        
 </body>
 </html>
