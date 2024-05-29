@@ -418,6 +418,14 @@ hr{
     margin: 90px;
 }
 
+.large-margin-top{
+    margin: 60px;
+}
+
+.larger-margin-top{
+    margin-top: 90px;
+}
+
 .invoice-footer-text{
     padding: 36px 40px;
 }
