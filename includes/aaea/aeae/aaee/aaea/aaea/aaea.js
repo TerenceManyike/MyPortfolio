@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
     const calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         selectable: true,
@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
         },
+        initialView: 'dayGridMonth',
         dateClick: function(info) {
-            alert('clicked ' + info.dateStr);
+            // alert('clicked ' + info.dateStr);
         },
         select: function(info) {
-            alert('selected ' + info.startStr + ' to ' + info.endStr);
+            // alert('selected ' + info.startStr + ' to ' + info.endStr);
         },
         dayCellClassNames: function(arg) {
             if (arg.date.getDate() === new Date().getDate() &&
@@ -21,5 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Render the calendar initially
     calendar.render();
+
+    $('#nav-calendar-tab').on('click', function() {
+        setTimeout(function() {
+            calendar.updateSize();
+        }, 500);
+    })
 });

@@ -325,117 +325,102 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mt-4 p-4 text-center">
                                     <div id='invoice'>
-                                        <div class="display-3 text-center text-danger mb-4">
+                                        <div class="text-center text-danger">
                                             Invoice System under development!...
                                         </div>
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-
-                                            <form class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                </div>
-                                                    <div class="col-md-6">
-                                                    <label for="inputPassword4" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-                                                <div class="col-12">
-                                                    <label for="inputAddress" class="form-label">Address</label>
-                                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                                </div>
-                                                <div class="col-12">
-                                                    <label for="inputAddress2" class="form-label">Address 2</label>
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputCity" class="form-label">City</label>
-                                                    <input type="text" class="form-control" id="inputCity">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="inputState" class="form-label">State</label>
-                                                    <select id="inputState" class="form-select">
-                                                        <option selected>Choose...</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label for="inputZip" class="form-label">Zip</label>
-                                                    <input type="text" class="form-control" id="inputZip">
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        Check me out
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-invoice" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        INVOICE PREVIEW
-                                                    </button>
-                                                </div>
-                                            </form>
-
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-center my-4 fs-1" style="color: #1A5276;">
+                                            CREATE INVOICE
                                         </div>
-                                        <div class="col-md-6">
-
+                                        <div class="col-md-5 mb-4">
+                                            <div class="mb-4 fs-5">
+                                                USER INFORMATION
+                                            </div>
                                             <form class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                </div>
-                                                    <div class="col-md-6">
-                                                    <label for="inputPassword4" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="User Full Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="inputAddress" class="form-label">Address</label>
-                                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Company Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="inputAddress2" class="form-label">Address 2</label>
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputCity" class="form-label">City</label>
-                                                    <input type="text" class="form-control" id="inputCity">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="inputState" class="form-label">State</label>
-                                                    <select id="inputState" class="form-select">
-                                                        <option selected>Choose...</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label for="inputZip" class="form-label">Zip</label>
-                                                    <input type="text" class="form-control" id="inputZip">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Address Line One">
                                                 </div>
                                                 <div class="col-12">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        Check me out
-                                                        </label>
-                                                    </div>
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Address Line Two">
                                                 </div>
                                                 <div class="col-12">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-invoice" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        INVOICE PREVIEW
-                                                    </button>
+                                                    <input type="email" class="form-control" id="inputAddress2" placeholder="User Email">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Phone">
                                                 </div>
                                             </form>
-
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="mb-4 fs-5">
+                                                RECEIPIENT INFORMATION
+                                            </div>
+                                            <form class="row g-3">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="Receipient Full Name">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Address Line One">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Address Line Two">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="email" class="form-control" id="inputAddress2" placeholder="Receipient Email">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Phone">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="m-4 fs-5">
+                                                INVOICE ITEM ONE
+                                            </div>
+                                            <form class="row g-3">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Item Name">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Quantity">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Price">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="m-4 fs-5">
+                                                INVOICE ITEM TWO
+                                            </div>
+                                            <form class="row g-3">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Item Name">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Quantity">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Price">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-12 pt-4">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-invoice" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                INVOICE PREVIEW
+                                            </button>
                                         </div>
                                     </div>
-                                    
-                                    <div class="accordion accordion-flush mt-4 mb-4" id="accordionFlushExample8">
+                                    <div class="small-margin"></div>
+                                    <div class="accordion accordion-flush m-4" id="accordionFlushExample8">
                                         <div class="accordion-item more-provinces-accord">
                                             <h2 class="accordion-header" id="flush-headingOne8">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne8" aria-expanded="false" aria-controls="flush-collapseOne8">
@@ -551,12 +536,6 @@
                                                                                         <td></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>-</td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                    </tr>
-                                                                                    <tr>
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Subtotal:</strong></td>
@@ -576,7 +555,10 @@
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="larger-margin"></div>
+                                                                            <div class="text-end" style="padding-right: 25px;">
+                                                                                <strong>Signed By:</strong>&nbsp; ST Manyike
+                                                                            </div>
+                                                                            <div class="col-12 larger-margin w-50"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 text-center">
@@ -589,7 +571,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 invoice-footer text-center p-0 m-0">
-                                                        <div class="p-1">
+                                                        <div class="p-4">
                                                             <div class="small-text text-center invoice-footer-text">&copy; 
                                                                 2024 STM Analytics. All rights reserved. Empowering data-driven decisions for a smarter tomorrow. Contact us at +27790246772 or terrencemanyike@gmail.com.
                                                             </div>
