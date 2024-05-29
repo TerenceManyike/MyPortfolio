@@ -457,8 +457,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-
                                     
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -469,20 +467,19 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div id="modal-section" class="row modal-body p-0 m-0">
-                                                    
-                                                    <div class="col-2 invoice-shade p-0 m-0">
-                                                        <div class="invoice-no text-end fs-3 mt-4">
-                                                            <div class="large-margin"></div>
-                                                            <strong>NO#</strong>
+                                                    <div class="col-4 invoice-shade p-0 m-0">
+                                                        <div class="invoice-no text-end fs-3 my-3">
+                                                            <strong>INVNO#</strong>
                                                         </div>
                                                     </div>
-                                                    <div class="col-10 p-0 m-0">
-                                                        <div class="invoice-no text-start fs-3 mt-4">
-                                                            <div class="large-margin"></div>
-                                                            458908080808
+                                                    <div class="col-8 p-0 m-0">
+                                                        <div class="invoice-no text-start fs-3 my-3">
+                                                            <div id="invoice-reference"></div>
                                                         </div>
-                                                        
-                                                        <div class="text-center fs-1 mb-4">
+                                                    </div>
+                                                    <div class="x-small-margin"></div>
+                                                    <div class="col-12 p-0 m-0">
+                                                        <div class="text-center fs-1 mt-4">
                                                             INVOICE
                                                         </div>
                                                         <div class="invoice-items">
@@ -493,16 +490,14 @@
                                                                             Date: <span id="current-date"></span>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-6"></div>
-                                                                    <div class="col-6 text-end medium-text">
+                                                                    <div class="col-6 col-md-7"></div>
+                                                                    <div class="col-6 col-md-5 text-start medium-text">
                                                                         <div>Bill From:</div>
                                                                         <div>Your Company Name</div>
                                                                         <div>Company Address One</div>
                                                                         <div>Company Address Two</div>
-                                                                        <div>Company Email</div>
-                                                                        <div>Company Phone</div>
                                                                     </div>
-                                                                    <div class="col-6 text-start medium-text">
+                                                                    <div class="col-6 col-md-7 text-start medium-text">
                                                                         <div>Bill To:</div>
                                                                         <div>Client Name</div>
                                                                         <div>Client Address One</div>
@@ -510,8 +505,11 @@
                                                                         <div>Client Email</div>
                                                                         <div>Client Phone</div>
                                                                     </div>
-                                                                    <div class="col-6"></div>
-                                                                    <div class="col-12 fs-4 text-center">
+                                                                    <div class="col-6 col-md-5 text-start">
+                                                                        <div>Company Email</div>
+                                                                        <div>Company Phone</div>
+                                                                    </div>
+                                                                    <div class="col-12 fs-4 text-center mt-3">
                                                                         Invoice Items
                                                                     </div>
                                                                 </div>
@@ -553,6 +551,12 @@
                                                                                         <td></td>
                                                                                     </tr>
                                                                                     <tr>
+                                                                                        <td>-</td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                        <td></td>
+                                                                                    </tr>
+                                                                                    <tr>
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Subtotal:</strong></td>
@@ -575,6 +579,11 @@
                                                                             <div class="larger-margin"></div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button id="message-box" type="button" class="btn btn-invoice-download" style="border-right: 20px solid #1A5276; display: none; width: 100%; margin-bottom: 20px;">
+                                                                            DOWNLOADING!...
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -584,20 +593,15 @@
                                                             <div class="small-text text-center invoice-footer-text">&copy; 
                                                                 2024 STM Analytics. All rights reserved. Empowering data-driven decisions for a smarter tomorrow. Contact us at +27790246772 or terrencemanyike@gmail.com.
                                                             </div>
-                                                            
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button id="message-box" type="button" class="btn btn-invoice-download" style="border-right: 20px solid #1A5276; display: none;">
-                                                        DOWNLOADING!...
-                                                    </button>
                                                     <button type="button" class="btn btn-invoice-close" data-bs-dismiss="modal">CLOSE</button>
                                                     <button id="download-invoice" type="button" class="btn btn-invoice-download">
                                                         DOWNLOAD INVOICE
                                                     </button>
                                                 </div>
-                                                
                                             </div>
                                         </div>
                                     </div>
