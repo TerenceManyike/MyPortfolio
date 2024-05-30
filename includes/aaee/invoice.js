@@ -108,4 +108,44 @@ $(document).ready(function() {
 
     });
 
+    
+    document.getElementById('imgInp').addEventListener('change', function() {
+        readURL(this);
+    });
+
+    document.getElementById('imgInp1').addEventListener('change', function() {
+        readURL1(this);
+    });
+    
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('blah').setAttribute('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('blah1').setAttribute('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#download-poster').on('click', function() {
+        $('#message-box-poster').fadeIn().delay(3000).fadeOut();
+
+        html2canvas(document.querySelector("#poster-section")).then(canvas => {
+            var link = document.createElement('a');
+            link.href = canvas.toDataURL("image/png");
+            link.download = 'section-image.png';
+            link.click();
+        });
+    });
+    
 });
