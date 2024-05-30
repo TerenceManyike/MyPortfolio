@@ -117,22 +117,22 @@ hr{
 
 .card-img-top{
     height: 200px;
-    border-top-left-radius: 50px ;
-    border-top-right-radius: 50px ;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
 }
 
 .my-p-card{
     width: auto;
     height: 500px;
     margin-bottom: 100px;
-    border-radius: 50px;
+    border-radius: 5px;
     border-color: #1A5276 !important;
     opacity: 0.6;
 }
 
 .card-btn{
     margin-bottom: 20px !important;
-    border-radius: 50px;
+    border-radius: 1px;
     background-color: #061c2b;
     color: honeydew;
     border-style: none;
@@ -143,7 +143,7 @@ hr{
     text-decoration: none;
     background-color: red !important;
     color: honeydew !important;
-    border-radius: 50px;
+    border-radius: 1px;
 }
 
 .about1{

@@ -324,11 +324,6 @@
                         <div class="tab-pane fade" id="nav-invoice" role="tabpanel" aria-labelledby="nav-invoice-tab">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mt-4 p-4 text-center">
-                                    <div id='invoice'>
-                                        <div class="text-center text-danger">
-                                            Invoice System under development!...
-                                        </div>
-                                    </div>
                                     <div class="row justify-content-center">
                                         <div class="col-12 text-center my-4 fs-1" style="color: #1A5276;">
                                             CREATE INVOICE
@@ -339,22 +334,22 @@
                                             </div>
                                             <form class="row g-3">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress" placeholder="User Full Name">
+                                                    <input type="text" class="form-control" id="invoice-user-name" placeholder="User Full Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Company Name">
+                                                    <input type="text" class="form-control" id="invoice-user-company" placeholder="User Company Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Address Line One">
+                                                    <input type="text" class="form-control" id="user-address-one" placeholder="User Address Line One">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Address Line Two">
+                                                    <input type="text" class="form-control" id="user-address-two" placeholder="User Address Line Two">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="email" class="form-control" id="inputAddress2" placeholder="User Email">
+                                                    <input type="email" class="form-control" id="invoice-user-email" placeholder="User Email">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="User Phone">
+                                                    <input type="text" class="form-control" id="invoice-user-phone" placeholder="User Phone">
                                                 </div>
                                             </form>
                                         </div>
@@ -364,25 +359,25 @@
                                             </div>
                                             <form class="row g-3">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress" placeholder="Receipient Full Name">
+                                                    <input type="text" class="form-control" id="invoice-receipient-name" placeholder="Receipient Full Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Address Line One">
+                                                    <input type="text" class="form-control" id="receipient-address-one" placeholder="Receipient Address Line One">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Address Line Two">
+                                                    <input type="text" class="form-control" id="receipient-address-one" placeholder="Receipient Address Line Two">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="email" class="form-control" id="inputAddress2" placeholder="Receipient Email">
+                                                    <input type="email" class="form-control" id="invoice-receipient-email" placeholder="Receipient Email">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Receipient Phone">
+                                                    <input type="text" class="form-control" id="invoice-receipient-phone" placeholder="Receipient Phone">
                                                 </div>
                                                 <div class="col-12">
-                                                    <select id="inputState" class="form-select">
-                                                      <option selected>Is Vat Applied</option>
-                                                      <option>15 %</option>
-                                                      <option>15.5 %</option>
+                                                    <select id="vatState" class="form-select">
+                                                      <option selected value="0">Is Vat Applied</option>
+                                                      <option value="15">15 %</option>
+                                                      <option value="15.5">15.5 %</option>
                                                     </select>
                                                   </div>
                                             </form>
@@ -393,13 +388,13 @@
                                             </div>
                                             <form class="row g-3">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Item Name">
+                                                    <input type="text" class="form-control" id="item-name-one" placeholder="Item Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Quantity">
+                                                    <input type="number" class="form-control" id="item-quantity-one" placeholder="Item Quantity">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Price">
+                                                    <input type="number" class="form-control" id="item-price-one" placeholder="Item Price">
                                                 </div>
                                             </form>
                                         </div>
@@ -409,19 +404,19 @@
                                             </div>
                                             <form class="row g-3">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Item Name">
+                                                    <input type="text" class="form-control" id="item-name-two" placeholder="Item Name">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Quantity">
+                                                    <input type="number" class="form-control" id="item-quantity-two" placeholder="Item Quantity">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="Item Price">
+                                                    <input type="number" class="form-control" id="item-price-two" placeholder="Item Price">
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="col-12 pt-4">
                                             <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-invoice" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <button id="invoice-preview" type="button" class="btn btn-invoice" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                                                 INVOICE PREVIEW
                                             </button>
                                         </div>
@@ -439,8 +434,8 @@
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div>
-                                                                <div class="display-3 text-danger">
-                                                                    DEPOSIT INVOICE In Progress!..
+                                                                <div class="m-4 text-danger text-center">
+                                                                    Deposit Invoice In Progress!..
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -451,7 +446,7 @@
                                     </div>
                                     
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header invoice-footer">
@@ -485,21 +480,21 @@
                                                                     <div class="col-6"></div>
                                                                     <div class="col-6 text-end medium-text">
                                                                         <div>Bill From:</div>
-                                                                        <div>Your Company Name</div>
-                                                                        <div>Company Address One</div>
-                                                                        <div>Company Address Two</div>
+                                                                        <div id="modal-user-company"></div>
+                                                                        <div id="modal-user-address-one"></div>
+                                                                        <div id="modal-user-address-two"></div>
                                                                     </div>
                                                                     <div class="col-6 text-start medium-text">
                                                                         <div>Bill To:</div>
-                                                                        <div>Client Name</div>
-                                                                        <div>Client Address One</div>
-                                                                        <div>Client Address Two</div>
-                                                                        <div>Client Email</div>
-                                                                        <div>Client Phone</div>
+                                                                        <div id="modal-receipient-name"></div>
+                                                                        <div id="modal-receipient-address-one"></div>
+                                                                        <div id="modal-receipient-address-two"></div>
+                                                                        <div id="modal-receipient-email"></div>
+                                                                        <div id="modal-receipient-phone"></div>
                                                                     </div>
                                                                     <div class="col-6 text-end">
-                                                                        <div>Company Email</div>
-                                                                        <div>Company Phone</div>
+                                                                        <div id="modal-user-email"></div>
+                                                                        <div id="modal-user-phone"></div>
                                                                     </div>
                                                                     <div class="col-12 fs-4 text-center mt-3">
                                                                         Invoice Items
@@ -519,16 +514,24 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td>Item 1</td>
-                                                                                        <td>2</td>
-                                                                                        <td>R10.00</td>
-                                                                                        <td>R20.00</td>
+                                                                                        <td id="modal-item-name-one"></td>
+                                                                                        <td id="modal-item-quantity-one"></td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-price-one"></span>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-one-total"></span>
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>-</td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td></td>
+                                                                                        <td id="modal-item-name-two"></td>
+                                                                                        <td id="modal-item-quantity-two"></td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-price-two"></span>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-two-total"></span>
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td>-</td>
@@ -546,24 +549,33 @@
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Subtotal:</strong></td>
-                                                                                        <td>R115.00</td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-sub-total"></span>
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Vat (15%):</strong></td>
-                                                                                        <td>R15.00</td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-vat"></span> %
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Total:</strong></td>
-                                                                                        <td><strong>R130.00</strong></td>
+                                                                                        <td>
+                                                                                            <strong>
+                                                                                                <span id="modal-item-total"></span>
+                                                                                            </strong>
+                                                                                        </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
                                                                             <div class="text-end" style="padding-right: 25px;">
-                                                                                <strong>Signed By:</strong>&nbsp; ST Manyike
+                                                                                <strong>Signed By:</strong>&nbsp; 
+                                                                                <span id="modal-user-name"></span>
                                                                             </div>
                                                                             <div class="col-12 larger-margin w-50"></div>
                                                                         </div>
