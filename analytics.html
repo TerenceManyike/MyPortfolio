@@ -613,11 +613,81 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-8 mt-4 p-4">
                                     <div id='poster'>
-                                        <div class="display-1 text-center">
+                                        <div class="m-4 text-danger text-center">
                                             Poster System under development!...
                                         </div>
                                     </div>
+
+                                    <input type='file' id="imgInp" onchange="readURL(this);" />
+                                    <input type='file' id="imgInp1" onchange="readURL1(this);" />
+                                    
+
                                 </div>
+
+                                <div class="col-10 mx-4">
+                                    <div class="accordion accordion-flush m-4" id="accordionFlushExample9">
+                                        <div class="accordion-item more-provinces-accord">
+                                            <h2 class="accordion-header" id="flush-headingOne9">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne9" aria-expanded="false" aria-controls="flush-collapseOne9">
+                                                    POSTER PREVIEW
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne9" data-bs-parent="#accordionFlushExample9">
+                                                <div class="accordion-body p-0 m-0">
+                                                    <div id="poster-section" class="p-0 m-0">
+
+                                                        <div class="row pb-4 m-0 p-0" style="background-color: #d5efff;">
+
+                                                            <div class="col-12 mb-4 m-0 p-0">
+                                                                <img class="poster-img-one" id="blah" src="#" alt="your image" />
+                                                            </div>
+
+                                                            
+                                                            <div class="col-12 m-4 text-center display-1 fst-italic fst-bold" style="color: #1A5276;">
+                                                                <strong>
+                                                                    TEST POSTER
+                                                                </strong>
+                                                                
+                                                            </div>
+
+                                                            
+
+                                                            <div class="col-3"></div>
+                                                            <div class="col-6 text-center my-4">
+                                                                <img class="poster-img-two" id="blah1" src="#" alt="your image" />
+                                                            </div>
+                                                            <div class="col-3"></div>
+                                                        </div>
+
+                                                        <div class=" invoice-footer text-center p-0 m-0">
+                                                            <div class="p-4">
+                                                                <div class="small-text text-center invoice-footer-text">&copy; 
+                                                                    2024 STM Analytics. All rights reserved. Empowering data-driven decisions for a smarter tomorrow. Contact us at +27790246772 or terrencemanyike@gmail.com.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12 text-center my-4">
+                                                            <button id="message-box-poster" type="button" class="btn btn-invoice-download" style="border-right: 40px solid #1A5276; display: none; width: 90%;">
+                                                                DOWNLOADING!...
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-12 text-center mb-4">
+                                                            <button id="download-poster" type="button" class="btn btn-invoice">
+                                                                DOWNLOAD POSTER
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
