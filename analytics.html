@@ -379,7 +379,7 @@
                                                       <option value="15">15 %</option>
                                                       <option value="15.5">15.5 %</option>
                                                     </select>
-                                                  </div>
+                                                </div>
                                             </form>
                                         </div>
                                         <div class="col-md-5">
@@ -610,21 +610,56 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-poster" role="tabpanel" aria-labelledby="nav-poster-tab">
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 mt-4 p-4">
-                                    <div id='poster'>
-                                        <div class="m-4 text-danger text-center">
-                                            Poster System under development!...
-                                        </div>
+                            <div class="row justify-content-center pt-4">
+                                <div class="col-12 text-center my-4 fs-1" style="color: #1A5276;">
+                                    CREATE POSTER
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="m-4 fs-5">
+                                        POSTER DETAILS
                                     </div>
-                                    <input type='file' id="imgInp" onchange="readURL(this);" />
-                                    <input type='file' id="imgInp1" onchange="readURL1(this);" />
+                                    <form class="row g-3">
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="poster-header" placeholder="Poster Header">
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea type="text" class="form-control" id="poster-details" placeholder="Poster Details"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea type="text" class="form-control" id="poster-description" placeholder="Poster Description"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="m-4 fs-5">
+                                        TWO POSTER IMAGES
+                                    </div>
+                                    <form class="row g-3">
+                                        <div class="col-12">
+                                            <input type='file' id="imgInp" onchange="readURL(this);" />
+                                        </div>
+                                        <div class="col-12">
+                                            <input type='file' id="imgInp1" onchange="readURL1(this);" />
+                                        </div>
+                                        <div class="col-12">
+                                            <select id="poster-background" class="form-select theme-update">
+                                                <option class="theme-update" selected value="#1A5276" style="color: #1A5276;">Blue Theme</option>
+                                                <option class="theme-update" value="#d1237a">Pink Theme</option>
+                                                <option class="theme-update" value="#9e15b7">Purple Theme</option>
+                                                <option class="theme-update" value="#c3b907">Yellow Theme</option>
+                                                <option class="theme-update" value="#670101">Red Theme</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="poster-footer-input" placeholder="Poster Footer"></input>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="col-10 mx-4">
                                     <div class="accordion accordion-flush m-4" id="accordionFlushExample9">
                                         <div class="accordion-item more-provinces-accord">
                                             <h2 class="accordion-header" id="flush-headingOne9">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne9" aria-expanded="false" aria-controls="flush-collapseOne9">
+                                                <button id="open-poster" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne9" aria-expanded="false" aria-controls="flush-collapseOne9">
                                                     POSTER PREVIEW
                                                 </button>
                                             </h2>
@@ -632,26 +667,26 @@
                                                 <div class="accordion-body p-0 m-0">
                                                     <div id="poster-section" class="p-0 m-0" style="background-color: white;">
                                                         <div class="row pb-4 m-0 p-0 justify-content-center">
-                                                            <div class="col-12 m-0 mb-4 p-4 bg-stm-blue text-center display-3 fst-italic fst-bold" style="color: white;">
-                                                                <strong>
-                                                                    TEST POSTER
+                                                            <div class="col-12 m-0 mb-4 p-4 bg-stm-blue text-center fs-2 fst-italic fst-bold" style="color: white;">
+                                                                <strong id="poster_header">
+                                                                    POSTER TITLE
                                                                 </strong>
                                                             </div>
-                                                            <div class="col-md-4 fst-italic text-center align-self-center"  style="color: #1A5276;">
-                                                                <p class="fs-4">
+                                                            <div class="col-6 m-0 mb-4 col-md-4 fst-italic text-center align-self-center"  style="color: #1A5276;">
+                                                                <p id="poster_description" class="fs-4">
                                                                     Poster description
                                                                 </p>
                                                             </div>
-                                                            <div class="col-md-4 m-4 large-margin-top">
+                                                            <div class="col-6 m-0 mb-4 col-md-4 my-4 large-margin-top">
                                                                 <img class="poster-img-one" id="blah" src="#" alt="your image" />
                                                             </div>
                                                             <div class="col-12 mb-2 text-center fs-3 fst-italic fst-bold" style="color: #1A5276;">
-                                                                <strong>
+                                                                <strong id="poster_details">
                                                                     Poster Details
                                                                 </strong>
                                                             </div>
                                                         </div>
-                                                        <div class="row m-0 bg-stm-blue px-4" style="opacity: 0.7;">
+                                                        <div class="row m-0 mb-0 bg-stm-blue px-4" style="opacity: 0.7;">
                                                             <div class="col-4 text-center my-4">
                                                                 <img class="poster-img-two" id="blah1" src="#" alt="your image" />
                                                             </div>
@@ -662,17 +697,15 @@
                                                                 <img class="poster-img-two" id="blah3" src="#" alt="your image" />
                                                             </div>
                                                         </div>
-                                                        <div class="m-0 p-0 p-4 fw-light fst-italic text-center w-bg">
-                                                            Text here!..
-                                                            <div class="mt-4">
-                                                                <img class="poster-stm-logo" src="includes/STMLogo.png" alt="logo" style="width: 30px; height: 30px;">
-                                                            </div>
+                                                        <div class="m-0 pt-4 fw-light fst-italic text-center w-bg">
+                                                            <p id="poster_footer_text">
+                                                                Text here!..
+                                                            </p>
                                                         </div>
-                                                        <div class=" poster-footer text-center p-0 m-0">
-                                                            <div class="p-4">
+                                                        <div class="poster-footer text-center p-0 m-0">
+                                                            <div class="pt-4">
                                                                 <div class="small-text text-center invoice-footer-text mt-4">
-                                                                    <img class="poster-stm-logo" src="includes/STMLogo.png" alt="logo">
-                                                                    &nbsp; &copy; 2024 STM Analytics.
+                                                                    2024 STM Analytics.
                                                                 </div>
                                                             </div>
                                                         </div>
