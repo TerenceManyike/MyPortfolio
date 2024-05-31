@@ -132,6 +132,8 @@ $(document).ready(function() {
             var reader = new FileReader();
             reader.onload = function(e) {
                 document.getElementById('blah1').setAttribute('src', e.target.result);
+                document.getElementById('blah2').setAttribute('src', e.target.result);
+                document.getElementById('blah3').setAttribute('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }
