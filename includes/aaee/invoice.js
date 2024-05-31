@@ -149,5 +149,28 @@ $(document).ready(function() {
             link.click();
         });
     });
-    
+
+    function changeTheme(){
+        var p_header = $('#poster-header').val();
+        var p_details = $('#poster-details').val();
+        var p_description = $('#poster-description').val();
+        var p_footer = $('#poster-footer-input').val();
+        var p_background = $('#poster-background').val();
+
+        $('#poster_header').text(p_header);
+        $('#poster_details').text(p_details).css('color', p_background);
+        $('#poster_description').text(p_description).css('color', p_background);
+        $('#poster_footer_text').text(p_footer);
+
+        $('.poster-footer').css('background-color', p_background);
+        $('.bg-stm-blue').css('background-color', p_background);
+    }
+
+    $('#open-poster').on('click', function() {
+        changeTheme();
+    });
+
+    $('.theme-update').on('click', function() {
+        changeTheme();
+    })
 });

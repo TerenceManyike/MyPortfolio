@@ -448,7 +448,7 @@ hr{
 .poster-img-one{
     width: 100%;
     border-radius: 50%;
-    height: 150px;
+    height: 250px;
 }
 
 .poster-img-two{
@@ -475,8 +475,6 @@ hr{
 position: relative;
 background-color: #1A5276;
 color: white;
-padding: 2rem 1rem;
-text-align: center;
 }
 
 .poster-footer::before {
