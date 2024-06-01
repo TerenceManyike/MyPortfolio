@@ -616,23 +616,23 @@
                                 </div>
                                 <div class="col-md-4 text-center">
                                     <div class="m-4 fs-5">
-                                        POSTER DETAILS
+                                        EVENT OR PRODUCT POSTER DETAILS
                                     </div>
                                     <form class="row g-3">
                                         <div class="col-12">
-                                            <input type="text" class="form-control" id="poster-header" placeholder="Poster Header">
+                                            <input type="text" class="form-control" id="poster-header" placeholder="Event or Product Poster Header">
                                         </div>
                                         <div class="col-12">
-                                            <textarea type="text" class="form-control" id="poster-details" placeholder="Poster Details"></textarea>
+                                            <textarea type="text" class="form-control" id="poster-details" placeholder="Event or Product Poster Details"></textarea>
                                         </div>
                                         <div class="col-12">
-                                            <textarea type="text" class="form-control" id="poster-description" placeholder="Poster Description"></textarea>
+                                            <textarea type="text" class="form-control" id="poster-description" placeholder="Event or Product Poster Description"></textarea>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="m-4 fs-5">
-                                        TWO POSTER IMAGES
+                                        TWO EVENT OR PRODUCT POSTER IMAGES
                                     </div>
                                     <form class="row g-3">
                                         <div class="col-12">
@@ -642,16 +642,24 @@
                                             <input type='file' id="imgInp1" onchange="readURL1(this);" />
                                         </div>
                                         <div class="col-12">
-                                            <select id="poster-background" class="form-select theme-update">
-                                                <option class="theme-update" selected value="#1A5276" style="color: #1A5276;">Blue Theme</option>
-                                                <option class="theme-update" value="#d1237a">Pink Theme</option>
-                                                <option class="theme-update" value="#9e15b7">Purple Theme</option>
-                                                <option class="theme-update" value="#c3b907">Yellow Theme</option>
-                                                <option class="theme-update" value="#670101">Red Theme</option>
+                                            <select id="poster-background" class="form-select theme-update custom-select" >
+                                                <option class="theme-update" value="#1A5276" data-bgcolor="#1A5276" >BLUE THEME</option>
+                                                <option class="theme-update" value="#865f15" data-bgcolor="#865f15">BROWN THEME</option>
+                                                <option class="theme-update" value="#032c45" data-bgcolor="#032c45" >DARK BLUE THEME</option>
+                                                <option class="theme-update" value="#0e0e0e" data-bgcolor="#0e0e0e">DARK THEME</option>
+                                                <option class="theme-update" value="#7a7a7a" data-bgcolor="#7a7a7a">GRAY THEME</option>
+                                                <option class="theme-update" value="#186e15" data-bgcolor="#186e15">GREEN THEME</option>
+                                                <option class="theme-update" value="#d1237a" data-bgcolor="#d1237a">PINK THEME</option>
+                                                <option class="theme-update" value="#32c1cb" data-bgcolor="#32c1cb">LIGHT BLUE THEME</option>
+                                                <option class="theme-update" value="#ff7b00" data-bgcolor="#ff7b00">ORANGE THEME</option>
+                                                <option class="theme-update" value="#d1237a" data-bgcolor="#d1237a">PINK THEME</option>
+                                                <option class="theme-update" value="#9e15b7" data-bgcolor="#9e15b7">PURPLE THEME</option>
+                                                <option class="theme-update" value="#670101" data-bgcolor="#670101">WINE THEME</option>
+                                                <option class="theme-update" value="#ca1100" data-bgcolor="#ca1100">RED THEME</option>
                                             </select>
                                         </div>
                                         <div class="col-12">
-                                            <input type="text" class="form-control" id="poster-footer-input" placeholder="Poster Footer"></input>
+                                            <input type="text" class="form-control" id="poster-footer-input" placeholder="Event or Product Poster Footer"></input>
                                         </div>
                                     </form>
                                 </div>
@@ -680,20 +688,20 @@
                                                             <div class="col-6 m-0 mb-4 col-md-4 my-4 large-margin-top">
                                                                 <img class="poster-img-one" id="blah" src="#" alt="your image" />
                                                             </div>
-                                                            <div class="col-12 mb-2 text-center fs-3 fst-italic fst-bold" style="color: #1A5276;">
+                                                            <div class="col-12 mb-2 pr-1 text-center fs-3 fst-italic fst-bold" style="color: #1A5276;">
                                                                 <strong id="poster_details">
                                                                     Poster Details
                                                                 </strong>
                                                             </div>
                                                         </div>
-                                                        <div class="row m-0 mb-0 bg-stm-blue px-4" style="opacity: 0.7;">
-                                                            <div class="col-4 text-center my-4">
+                                                        <div class="row m-0 mb-0 bg-stm-blue mobile-poster-img-bg px-4" style="opacity: 0.7;">
+                                                            <div class="col-4 text-center my-4 mobile-poster-img-two">
                                                                 <img class="poster-img-two" id="blah1" src="#" alt="your image" />
                                                             </div>
-                                                            <div class="col-4 text-center my-4">
+                                                            <div class="col-4 text-center my-4 mobile-poster-img-two">
                                                                 <img class="poster-img-two" id="blah2" src="#" alt="your image" />
                                                             </div>
-                                                            <div class="col-4 text-center my-4">
+                                                            <div class="col-4 text-center my-4 mobile-poster-img-two">
                                                                 <img class="poster-img-two" id="blah3" src="#" alt="your image" />
                                                             </div>
                                                         </div>

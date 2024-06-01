@@ -173,4 +173,11 @@ $(document).ready(function() {
     $('.theme-update').on('click', function() {
         changeTheme();
     })
+
+    $('#poster-background').on('change', function() {
+        var selectedOption = $(this).find('option:selected');
+        var color = selectedOption.data('bgcolor');
+        $(this).css('background-color', color);
+        changeTheme();
+    });
 });
