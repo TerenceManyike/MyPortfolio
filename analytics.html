@@ -382,35 +382,64 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-md-5">
-                                            <div class="m-4 fs-5">
-                                                INVOICE ITEM ONE
-                                            </div>
+                                        <div class="col-md-10">
+                                            
                                             <form class="row g-3">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" id="item-name-one" placeholder="Item Name">
+                                                <div class="col-6 col-md-3">
+                                                    <div class="m-4">
+                                                        INVOICE ITEM
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="text" class="form-control" id="item-name-one" placeholder="Item Name">
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="number" class="form-control" id="item-quantity-one" placeholder="Item Quantity">
+                                                    </div>
+                                                    <div class="">
+                                                        <input type="number" class="form-control" id="item-price-one" placeholder="Item Price">
+                                                    </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <input type="number" class="form-control" id="item-quantity-one" placeholder="Item Quantity">
+                                                <div class="col-6 col-md-3">
+                                                    <div class="m-4">
+                                                        INVOICE ITEM
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="text" class="form-control" id="item-name-two" placeholder="Item Name">
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="number" class="form-control" id="item-quantity-two" placeholder="Item Quantity">
+                                                    </div>
+                                                    <div class="mb-2">
+                                                       <input type="number" class="form-control" id="item-price-two" placeholder="Item Price">
+                                                    </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <input type="number" class="form-control" id="item-price-one" placeholder="Item Price">
+                                                <div class="col-6 col-md-3">
+                                                    <div class="m-4">
+                                                        INVOICE ITEM
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="text" class="form-control" id="item-name-three" placeholder="Item Name">
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="number" class="form-control" id="item-quantity-three" placeholder="Item Quantity">
+                                                    </div>
+                                                    <div class="">
+                                                       <input type="number" class="form-control" id="item-price-three" placeholder="Item Price">
+                                                    </div>
                                                 </div>
-                                            </form>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <div class="m-4 fs-5">
-                                                INVOICE ITEM TWO
-                                            </div>
-                                            <form class="row g-3">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" id="item-name-two" placeholder="Item Name">
-                                                </div>
-                                                <div class="col-12">
-                                                    <input type="number" class="form-control" id="item-quantity-two" placeholder="Item Quantity">
-                                                </div>
-                                                <div class="col-12">
-                                                    <input type="number" class="form-control" id="item-price-two" placeholder="Item Price">
+                                                <div class="col-6 col-md-3">
+                                                    <div class="m-4">
+                                                        INVOICE ITEM
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="text" class="form-control" id="item-name-four" placeholder="Item Name">
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <input type="number" class="form-control" id="item-quantity-four" placeholder="Item Quantity">
+                                                    </div>
+                                                    <div class="">
+                                                       <input type="number" class="form-control" id="item-price-four" placeholder="Item Price">
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
@@ -520,7 +549,7 @@
                                                                                             <span id="modal-item-price-one"></span>
                                                                                         </td>
                                                                                         <td>
-                                                                                            <span id="modal-item-one-total"></span>
+                                                                                            <span id="modal-item-one-total">R 0</span>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
@@ -530,35 +559,43 @@
                                                                                             <span id="modal-item-price-two"></span>
                                                                                         </td>
                                                                                         <td>
-                                                                                            <span id="modal-item-two-total"></span>
+                                                                                            <span id="modal-item-two-total">R 0</span>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>-</td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td></td>
+                                                                                        <td id="modal-item-name-three"></td>
+                                                                                        <td id="modal-item-quantity-three"></td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-price-three"></span>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-three-total">R 0</span>
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>-</td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td></td>
+                                                                                        <td id="modal-item-name-four"></td>
+                                                                                        <td id="modal-item-quantity-four"></td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-price-four"></span>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <span id="modal-item-four-total">R 0</span>
+                                                                                        </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                         <td><strong>Subtotal:</strong></td>
                                                                                         <td>
-                                                                                            <span id="modal-item-sub-total"></span>
+                                                                                            R <span id="modal-item-sub-total">0</span>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td></td>
                                                                                         <td></td>
-                                                                                        <td><strong>Vat (15%):</strong></td>
+                                                                                        <td><strong>Vat(15%):</strong></td>
                                                                                         <td>
-                                                                                            <span id="modal-item-vat"></span> %
+                                                                                            <span id="modal-item-vat">0</span> %
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
@@ -567,7 +604,7 @@
                                                                                         <td><strong>Total:</strong></td>
                                                                                         <td>
                                                                                             <strong>
-                                                                                                <span id="modal-item-total"></span>
+                                                                                                R <span id="modal-item-total">0</span>
                                                                                             </strong>
                                                                                         </td>
                                                                                     </tr>
