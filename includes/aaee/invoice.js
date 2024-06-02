@@ -64,23 +64,50 @@ $(document).ready(function() {
         var itemNameTwo = $('#item-name-two').val();
         var itemQuantityTwo = $('#item-quantity-two').val();
         var itemPriceTwo = $('#item-price-two').val();
+        
+        var itemNameThree = $('#item-name-three').val();
+        var itemQuantityThree = $('#item-quantity-three').val();
+        var itemPriceThree = $('#item-price-three').val();
+
+        var itemNameFour = $('#item-name-four').val();
+        var itemQuantityFour = $('#item-quantity-four').val();
+        var itemPriceFour = $('#item-price-four').val();
 
         var vat = $('#vatState').val();
         var itemOneTotal = itemPriceOne * itemQuantityOne;
         var itemTwoTotal = itemPriceTwo * itemQuantityTwo;
-        var subTotal = itemOneTotal + itemTwoTotal;
-        var total = subTotal * (vat/100) + subTotal;
+        var itemThreeTotal = itemPriceThree * itemQuantityThree;
+        var itemFourTotal = itemPriceFour * itemQuantityFour;
+        var subTotal = itemOneTotal + itemTwoTotal + itemThreeTotal + itemFourTotal;
 
-        if (itemPriceOne){
+        if (vat != 0) {
+            var total = subTotal * (vat/100) + subTotal;
+            total = Math.round(total);
+        } else {
+            var total = subTotal;
+            total = Math.round(total)
+        }
+
+        if (itemPriceOne) {
             var itemPriceOne = 'R ' + itemPriceOne;
         }
 
-        if (itemPriceTwo){
+        if (itemPriceTwo) {
             var itemPriceTwo = 'R ' + itemPriceTwo;
+        }
+
+        if (itemPriceThree) {
+            var itemPriceThree = 'R ' + itemPriceThree;
+        }
+
+        if (itemPriceFour) {
+            var itemPriceFour = 'R ' + itemPriceFour;
         }
 
         var itemOneTotal = 'R ' + itemOneTotal;
         var itemTwoTotal = 'R ' + itemTwoTotal;
+        var itemThreeTotal = 'R ' + itemThreeTotal;
+        var itemFourTotal = 'R ' + itemFourTotal;
 
         // Set the values in the modal
         $('#modal-user-name').text(userName);
@@ -100,9 +127,17 @@ $(document).ready(function() {
         $('#modal-item-name-two').text(itemNameTwo);
         $('#modal-item-quantity-two').text(itemQuantityTwo);
         $('#modal-item-price-two').text(itemPriceTwo);
+        $('#modal-item-name-three').text(itemNameThree);
+        $('#modal-item-quantity-three').text(itemQuantityThree);
+        $('#modal-item-price-three').text(itemPriceThree);
+        $('#modal-item-name-four').text(itemNameFour);
+        $('#modal-item-quantity-four').text(itemQuantityFour);
+        $('#modal-item-price-four').text(itemPriceFour);
         $('#modal-item-vat').text(vat);
         $('#modal-item-one-total').text(itemOneTotal);
         $('#modal-item-two-total').text(itemTwoTotal);
+        $('#modal-item-three-total').text(itemThreeTotal);
+        $('#modal-item-four-total').text(itemFourTotal);
         $('#modal-item-sub-total').text(subTotal);
         $('#modal-item-total').text(total);
 
