@@ -448,7 +448,8 @@ hr{
 .poster-img-one{
     width: 100%;
     border-radius: 50%;
-    /* height: 250px; */
+    border: 2px solid #1A5276;
+    box-shadow: 20px 10px 30px #1A5276;
 }
 
 .poster-img-two{

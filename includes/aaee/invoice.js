@@ -199,6 +199,7 @@ $(document).ready(function() {
 
         $('.poster-footer').css('background-color', p_background);
         $('.bg-stm-blue').css('background-color', p_background);
+        $('.poster-img-one').css('border', '2px solid ' + p_background).css('box-shadow', '20px 10px 30px ' + p_background);
     }
 
     $('#open-poster').on('click', function() {
